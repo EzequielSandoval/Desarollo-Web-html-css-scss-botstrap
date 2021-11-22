@@ -1,0 +1,889 @@
+/*pag inicio*/
+@import "pag-inicio/generales";
+@import "pag-inicio/header";
+@import "pag-inicio/slider";
+@import "pag-inicio/modelos";
+@import "pag-inicio/nosotros";
+@import "pag-inicio/preguntas";
+@import "pag-inicio/form";
+@import "pag-inicio/footer";
+/* fin pag inicio*/
+@import "pag-autos/pagAutos";
+@import "pag-pickups/pagPick";
+@import "pag-oportunidades/pagOportunidades";
+@import "pag-service/pagService";
+@import "pag-404/error404";
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+
+
+    /********slider********/
+    .container-fluid {
+        height: 220px;
+        padding: 0;
+    }
+
+    .carousel-item {
+        img {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    }
+
+    .carousel,
+    .slide {
+        a {
+            background-color: rgba(0, 0, 0, 0);
+        }
+    }
+
+    /********fin slider********/
+
+    /*grid*/
+    #nuevos--Modelos {
+        height: 330vh;
+    }
+
+    .modelos__contenedor--grid {
+        grid-template-columns: 1fr;
+        height: 100%;
+
+    }
+
+    .item__contenedor--forma {
+        height: 500px;
+        width: 100%;
+    }
+
+    .item__contenedor--forma:hover {
+        height: 500px;
+    }
+
+    /*fin grid*/
+
+    /*nosotros*/
+    #nosotros--seccion {
+        width: 80%;
+        height: 750px;
+        flex-direction: column;
+    }
+
+    .nosotros__izquierda--contenedor {
+        width: 100%;
+        height: 30%;
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .nosotros__derecha--contenedor {
+        width: 100%;
+        height: 70%;
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .nosotros__Marcas--img {
+        background-size: 90%;
+    }
+
+    /*fin nosotros*/
+
+    /*Formulario - mapa*/
+
+    #formulario--seccion {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 960px;
+    }
+
+    #formulario_contacto--centrar {
+        width: 100%;
+        height: 50%;
+    }
+
+    .formulario__contacto--flex {
+        height: 400px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario__contacto--label {
+        label {
+            font-size: smaller;
+        }
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    .mapaGoogle {
+        width: 80%;
+    }
+
+    #mensaje {
+        width: 100%;
+        height: 160px;
+        resize: none;
+        font-size: medium;
+    }
+
+    /*Fin formulario*/
+    /*footer */
+    footer {
+        width: 100%;
+        height: 300px;
+        flex-direction: column;
+    }
+
+    .logoFooter {
+        img {
+            width: 100%;
+        }
+    }
+
+    .copy {
+        width: 90%;
+    }
+
+    /*fin footer*/
+
+    /*AUTOS*/
+    #autos {
+        height: 420vh;
+    }
+
+    .variedadAutos {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    #pickups {
+        height: 420vh;
+    }
+
+    /******Preguntas********/
+    #preguntas {
+        height: 265vh;
+    }
+
+    .preguntas-contenedor {
+        height: 90%;
+        flex-direction: column;
+
+        .preguntas__derecha {
+            width: 80%;
+        }
+
+        .preguntas__izquierda {
+            width: 80%;
+        }
+    }
+
+    /******Fin preguntas*****/
+    #oportunidades {
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .art1 {
+        .op1Img {
+            .descOp1 {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    .art2 {
+        .op2Img {
+            .descOp2 {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    .art3 {
+        .op3Img {
+            .descOp3 {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    #service {
+        height: 350vh;
+    }
+
+    .service__contenedor {
+        height: 320vh;
+
+        .serviceImg {
+            height: 8%;
+            width: 100%;
+            background-size: 150%;
+            background-repeat: no-repeat;
+        }
+
+        .serviceText {
+            height: 30%;
+            text-align: justify;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .mantenimiento {
+            height: 180vh;
+            flex-direction: column;
+
+            .mant {
+                height: 15%;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+    /********slider********/
+    .container-fluid {
+        height: 400px;
+        padding: 0;
+    }
+
+    .carousel-item {
+        img {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    }
+
+    .carousel,
+    .slide {
+        a {
+            background-color: rgba(0, 0, 0, 0);
+        }
+    }
+
+    /********fin slider********/
+
+    /*grid*/
+    #nuevos--Modelos {
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        height: 140vh;
+    }
+
+    .modelos__contenedor--grid {
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+    }
+
+    .item__contenedor--forma {
+        height: 500px;
+        width: 100%;
+    }
+
+    .item__contenedor--forma:hover {
+        height: 500px;
+    }
+
+    .polo__Img,
+    .ecos__Img,
+    .captur__Img,
+    .cruze__Img {
+        height: 100%;
+        background-size: 100%;
+    }
+
+    /*fin grid*/
+
+    /*nosotros*/
+
+    #nosotros--contenedor {
+        width: 80%;
+        height: 750px;
+        flex-direction: column;
+    }
+
+    .nosotros__izquierda--contenedor {
+        width: 100%;
+        height: 30%;
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .nosotros__derecha--contenedor {
+        width: 100%;
+        height: 70%;
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .nosotros__Marcas--img {
+        background-size: 90%;
+    }
+
+    /*fin nosotros*/
+
+    /*Formulario - mapa*/
+
+    #formulario--seccion {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 960px;
+    }
+
+    #formulario_contacto--centrar {
+        width: 100%;
+        height: 50%;
+    }
+
+    .formulario__contacto--flex {
+        height: 400px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario__contacto--label {
+        label {
+            font-size: smaller;
+        }
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    .mapaGoogle {
+        width: 80%;
+    }
+
+    #mensaje {
+        width: 100%;
+        height: 160px;
+        resize: none;
+        font-size: medium;
+    }
+
+    /*Fin formulario*/
+    /*footer */
+    footer {
+        width: 100%;
+        height: 300px;
+        flex-direction: column;
+    }
+
+    .logoFooter {
+        img {
+            width: 100%;
+        }
+    }
+
+    .copy {
+        width: 90%;
+    }
+
+    /*fin footer*/
+
+    /*AUTOS*/
+    #autos {
+        height: 420vh;
+    }
+
+    .variedadAutos {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    #pickups {
+        height: 420vh;
+    }
+
+    /******Preguntas********/
+    #preguntas {
+        height: 150vh;
+    }
+
+    .preguntas-contenedor {
+        height: 90%;
+        flex-direction: column;
+
+        .preguntas__derecha {
+            width: 80%;
+        }
+
+        .preguntas__izquierda {
+            width: 80%;
+        }
+    }
+
+    #service {
+        height: 350vh;
+    }
+
+    .service__contenedor {
+        height: 320vh;
+
+        .serviceImg {
+            height: 12%;
+            width: 100%;
+            background-size: 150%;
+            background-repeat: no-repeat;
+        }
+
+        .serviceText {
+            height: 20%;
+            text-align: justify;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .mantenimiento {
+            height: 180vh;
+            flex-direction: column;
+
+            .mant {
+                height: 15%;
+            }
+        }
+    }
+
+    /******Fin preguntas*****/
+}
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+
+    /********slider********/
+    .container-fluid {
+        height: 420px;
+        padding: 0;
+    }
+
+    .carousel-item {
+        img {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    }
+
+    .carousel,
+    .slide {
+        a {
+            background-color: rgba(0, 0, 0, 0);
+        }
+    }
+
+    /********fin slider********/
+
+    /*grid*/
+    #nuevos--Modelos {
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        height: 140vh;
+    }
+
+    .modelos__contenedor--grid {
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+    }
+
+    .item__contenedor--forma {
+        height: 500px;
+        width: 100%;
+    }
+
+    .item__contenedor--forma:hover {
+        height: 500px;
+    }
+
+    .polo__Img,
+    .ecos__Img,
+    .captur__Img,
+    .cruze__Img {
+        height: 100%;
+        background-size: 100%;
+    }
+
+    /*fin grid*/
+
+    /*nosotros*/
+
+    #nosotros--seccion {
+        width: 80%;
+        height: 750px;
+        flex-direction: column;
+    }
+
+    .nosotros__izquierda--contenedor {
+        width: 100%;
+        height: 30%;
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .nosotros__derecha--contenedor {
+        width: 100%;
+        height: 70%;
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+
+    .nosotros__Marcas--img {
+        background-size: 90%;
+    }
+
+    /*fin nosotros*/
+    /*Preguntas*/
+    #preguntas {
+        height: 140vh;
+
+        .preguntas-contenedor {
+            .preguntas__izquierda {
+                height: 140%;
+            }
+
+            .preguntas__derecha {
+                height: 140%;
+            }
+        }
+    }
+
+    /*Fin preguntas*/
+    /*Formulario - mapa*/
+    /*Formulario - mapa*/
+
+    #formulario--seccion {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 960px;
+    }
+
+    #formulario_contacto--centrar {
+        width: 100%;
+        height: 50%;
+    }
+
+    .formulario__contacto--flex {
+        height: 400px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario__contacto--label label {
+        font-size: smaller;
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    .mapaGoogle {
+        width: 80%;
+    }
+
+    #mensaje {
+        width: 100%;
+        height: 160px;
+        resize: none;
+        font-size: medium;
+    }
+
+    /*Fin formulario*/
+    /*footer */
+    footer {
+        width: 100%;
+        height: 300px;
+        flex-direction: column;
+    }
+
+    .logoFooter {
+        img {
+            width: 100%;
+        }
+    }
+
+    .copy {
+        width: 90%;
+    }
+
+    /*fin footer*/
+
+    /*AUTOS*/
+    #autos {
+        height: 420vh;
+    }
+
+    .variedadAutos {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #pickups {
+        height: 420vh;
+    }
+
+    #service {
+        height: 220vh;
+    }
+
+    .service__contenedor {
+        height: 200vh;
+
+        .serviceImg {
+            height: 25%;
+            width: 100%;
+            background-size: 150%;
+            background-repeat: no-repeat;
+        }
+
+        .serviceText {
+            height: 20%;
+            text-align: justify;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .mantenimiento {
+            height: 40vh;
+            width: 90%;
+            // flex-direction: column;
+
+            .mant {
+                height: 250px;
+                width: 130px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+
+    /*******navbar*******/
+    .navbar-expand-lg {
+        flex-flow: column;
+    }
+
+    /*******fin navbar*******/
+
+
+    /*grid*/
+    #nuevos--Modelos {
+        height: 140vh;
+    }
+
+    .modelos__contenedor--grid {
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+
+    }
+
+    .item__contenedor--forma {
+        height: 500px;
+        width: 100%;
+    }
+
+    .item__contenedor--forma:hover {
+        height: 500px;
+    }
+
+    .polo__Img,
+    .ecos__Img,
+    .captur__Img,
+    .cruze__Img {
+
+        height: 100%;
+        background-size: 100%;
+    }
+
+    /*fin grid*/
+
+    /*nosotros*/
+
+    #nosotros--seccion {
+        width: 80%;
+        height: 750px;
+        flex-direction: column;
+    }
+
+    .nosotros__izquierda--contenedor {
+        width: 100%;
+        height: 30%;
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .nosotros__derecha--contenedor {
+        width: 100%;
+        height: 70%;
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .nosotros__Marcas--img {
+        background-size: 50%;
+    }
+
+    /*fin nosotros*/
+
+    /*Formulario - mapa*/
+
+    #formulario--seccion {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 960px;
+    }
+
+    #formulario_contacto--centrar {
+        width: 100%;
+        height: 50%;
+    }
+
+
+    .formulario__contacto--label {
+        label {
+            font-size: medium;
+        }
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    .mapaGoogle {
+        width: 80%;
+    }
+
+    /*Fin formulario*/
+
+
+    /*AUTOS*/
+    #autos {
+        height: 420vh;
+    }
+
+    .variedadAutos {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    #pickups {
+        height: 420vh;
+    }
+
+    /******Preguntas********/
+    /*Preguntas*/
+    #preguntas {
+        height: 140vh;
+
+        .preguntas-contenedor {
+            .preguntas__izquierda {
+                height: 140%;
+            }
+
+            .preguntas__derecha {
+                height: 140%;
+            }
+        }
+    }
+
+    /*Fin preguntas*/
+
+
+    /******Fin preguntas*****/
+    #service {
+        height: 220vh;
+    }
+
+    .service__contenedor {
+        height: 200vh;
+
+        .serviceImg {
+            height: 25%;
+            width: 100%;
+            background-size: 150%;
+            background-repeat: no-repeat;
+        }
+
+        .serviceText {
+            height: 20%;
+            text-align: justify;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .mantenimiento {
+            height: 40vh;
+            width: 90%;
+            // flex-direction: column;
+
+            .mant {
+                height: 250px;
+                width: 130px;
+            }
+        }
+    }
+}

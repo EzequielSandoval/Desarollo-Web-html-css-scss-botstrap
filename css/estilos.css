@@ -1,0 +1,1768 @@
+/*pag inicio*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,500;1,500&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400 !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #dcdcdc, #e2e2e2, #e9e9e9, #efefef, #f6f6f6, #f6f6f6, #f6f6f6, #f6f6f6, #efefef, #e9e9e9, #e2e2e2, #dcdcdc);
+}
+
+/*******navbar*******/
+.navbar {
+  margin-bottom: 15px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.logoPagina {
+  border: none;
+  background-image: url(../img/pag-inicio/logos/logo5.png);
+  background-size: cover;
+  background-position: center;
+  height: 86px;
+  width: 126px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-size: medium;
+}
+.navbar-light .navbar-nav .dropdown-menu {
+  position: absolute;
+  background-color: #f8f9fa;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: red;
+}
+
+.navbar-brand .logoCustom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logoTexto h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+}
+.logoTexto h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+}
+
+/*******fin navbar*******/
+/********slider********/
+.carousel,
+.slide {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.carousel,
+.slide a {
+  background-color: #2b2a2a;
+}
+
+/********fin slider********/
+/******modelos*******/
+#nuevos--Modelos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 10%;
+  margin-left: 10%;
+  height: 600px;
+  width: 80%;
+}
+#nuevos--Modelos h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.modelos__contenedor--grid {
+  height: 500px;
+  width: 100%;
+  text-align: center;
+  display: grid;
+  padding: 2%;
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item__contenedor--forma {
+  height: 400px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-box-shadow: 4px 7px 47px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 4px 7px 47px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 4px 7px 47px 0px rgba(0, 0, 0, 0.36);
+  border-radius: 10px 10px 10px 10px;
+  transition: all 0.5s;
+}
+
+.item__contenedor--forma:hover {
+  height: 450px;
+}
+
+.polo__contenedor--forma,
+.ecos__contenedor--forma,
+.captur__contenedor--forma,
+.cruze__contenedor--forma {
+  background-color: rgba(100, 100, 100, 0.445);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.polo__Img {
+  background-image: url(../img/pag-inicio/section-modelos/polo2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.ecos__Img {
+  background-image: url(../img/pag-inicio/section-modelos/ecos2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.captur__Img {
+  background-image: url(../img/pag-inicio/section-modelos/captur4.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.cruze__Img {
+  background-image: url(../img/pag-inicio/section-modelos/cruze2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.caracteristicas {
+  text-transform: uppercase;
+  text-align: justify;
+}
+
+.caracteristicas li i {
+  color: #ee1111;
+}
+
+/*******Fin modelos*******/
+/*******nosotros*******/
+#nosotros--seccion {
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 10%;
+  margin-left: 10%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+
+.nosotros__izquierda--contenedor {
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nosotros__derecha--contenedor {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nosotros__derecha--contenedor h3 {
+  padding-top: 30px;
+}
+
+.nosotros__Marcas--img {
+  background-image: url(../img/pag-inicio/section-nosotros/marcasImg.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+}
+
+.caracteristicas,
+.desc {
+  font-size: 15px;
+}
+
+/*******fin nosotros******/
+/*******Preguntas********/
+#preguntas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pag-inicio/section-faq/faq-img.png);
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#preguntas h2 {
+  color: white;
+  margin: 10px;
+  text-align: center;
+}
+
+.preguntas-contenedor {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preguntas-contenedor .preguntas__izquierda {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 45%;
+}
+.preguntas-contenedor .preguntas__derecha {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 45%;
+}
+.preguntas-contenedor .preg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 90%;
+}
+.preguntas-contenedor .preg div {
+  width: 80%;
+}
+.preguntas-contenedor .preg div a {
+  font-size: 1.5rem;
+}
+.preguntas-contenedor .preg .btn {
+  background-color: #aaaaaa;
+  width: 100%;
+}
+.preguntas-contenedor .preg .card,
+.preguntas-contenedor .preg .card-body {
+  margin-top: 2%;
+  width: 100%;
+}
+
+/*******Fin preguntas******/
+/******Formulario******/
+#formulario--seccion {
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 10%;
+  margin-left: 10%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+#formulario_contacto--centrar {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+#formulario_contacto--centrar legend {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.formulario__contacto--flex {
+  display: flex;
+  height: 30%;
+}
+
+.formulario--izquierda {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.formulario--derecha {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.formulario__contacto--label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nombre,
+#apellido,
+#email,
+#tipo {
+  width: 250px;
+  height: 30px;
+  border: 2px solid rgba(100, 100, 100, 0.445);
+  background-color: rgba(100, 100, 100, 0.445);
+}
+
+#mensaje {
+  border: 2px solid rgba(100, 100, 100, 0.445);
+  background-color: rgba(100, 100, 100, 0.445);
+  width: 470px;
+  height: 160px;
+  resize: none;
+  font-size: medium;
+}
+
+#verificacion {
+  margin-bottom: 10px;
+}
+
+#formulario_contacto--centrar button {
+  width: 60px;
+  height: 30px;
+  background-color: white;
+  border: 2px solid rgba(100, 100, 100, 0.445);
+  transition: 0.2s;
+}
+
+#formulario_contacto--centrar button:hover {
+  background-color: #a9aaa7;
+}
+
+.mapa {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.mapa h4 {
+  margin-top: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.mapaGoogle {
+  width: 90%;
+  height: 300px;
+  border: 2px solid rgba(100, 100, 100, 0.445);
+}
+
+/******Fin Formulario******/
+/*footer*/
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.logoFooter {
+  width: 270px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyRight {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redesFooter {
+  width: 270px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.redesFooter ul {
+  height: 32px;
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration-style: none;
+  list-style: none;
+}
+.redesFooter h3 {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.redesFooter i {
+  font-size: 25px;
+}
+.redesFooter ul li a {
+  color: black;
+}
+
+.fa-youtube:hover {
+  color: red;
+}
+
+.fa-instagram:hover {
+  color: #af06af;
+}
+
+.fa-facebook-square:hover {
+  color: #1a65d6;
+}
+
+.fa-twitter-square:hover {
+  color: #00e1ff;
+}
+
+/*fin footer*/
+/* fin pag inicio*/
+/**************************PAGINA AUTOS **************************/
+#autos-slider {
+  margin-bottom: 40px;
+}
+
+#autos {
+  height: 1300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.autosTitulos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.variedadAutos {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+
+.modAuto {
+  background-color: white;
+  border: 2px solid #a7a7a7;
+  -webkit-box-shadow: 4px 7px 47px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 4px 7px 47px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 4px 7px 47px 0px rgba(0, 0, 0, 0.36);
+  border-radius: 30px;
+  height: 310px;
+  width: 350px;
+}
+
+.modTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50%;
+}
+
+.botonMod {
+  background-color: #dad8d8;
+  border-style: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 80px;
+  transition: all 0.3s;
+}
+
+.botonMod:hover {
+  background-color: #a7a7a7;
+}
+
+.modImg {
+  height: 200px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  transition: all 0.5s;
+}
+
+.modImg:hover {
+  background-size: 100%;
+}
+
+/**Modelo 1**/
+.mod1 {
+  grid-area: 1/1/2/2;
+  display: flex;
+  flex-direction: column;
+}
+
+.mod1Img {
+  background-image: url(../img/pag-autos/corolla.png);
+}
+
+/**fin Modelo 1**/
+/**Moelos 2**/
+.mod2 {
+  grid-area: 1/2/2/3;
+  display: flex;
+  flex-direction: column;
+}
+
+.mod2Img {
+  background-image: url(../img/pag-autos/fluence.png);
+}
+
+/**Fin modelo 2*/
+/**Modelo 3**/
+.mod3 {
+  grid-area: 1/3/2/4;
+  display: flex;
+  flex-direction: column;
+}
+
+.mod3Img {
+  background-image: url(../img/pag-autos/focus.png);
+}
+
+/*Fin modelo 3**/
+/**Modelo 4**/
+.mod4 {
+  grid-area: 2/1/3/2;
+  display: flex;
+  flex-direction: column;
+}
+
+.mod4Img {
+  background-image: url(../img/pag-autos/vento.png);
+}
+
+/*Fin modelo 4**/
+/**Modelo 5**/
+.mod5 {
+  grid-area: 2/2/3/3;
+  display: flex;
+  flex-direction: column;
+}
+
+.mod5Img {
+  background-image: url(../img/pag-autos/c4.png);
+}
+
+/*Fin modelo 5**/
+/**Modelo 6**/
+.mod6 {
+  grid-area: 2/3/3/4;
+  display: flex;
+  flex-direction: column;
+}
+
+.mod6Img {
+  background-image: url(../img/pag-autos/a6.png);
+}
+
+/*Fin modelo 6**/
+/**Modelo 7**/
+.mod7 {
+  grid-area: 3/1/4/2;
+  display: flex;
+  flex-direction: column;
+}
+
+.mod7Img {
+  background-image: url(../img/pag-autos/yaris.png);
+}
+
+/*Fin modelo 7**/
+/**Modelo 8**/
+.mod8 {
+  grid-area: 3/2/4/3;
+  display: flex;
+  flex-direction: column;
+}
+
+.mod8Img {
+  background-image: url(../img/pag-autos/mini.png);
+}
+
+/*Fin modelo 8**/
+/**Modelo 9**/
+.mod9 {
+  grid-area: 3/3/4/4;
+  display: flex;
+  flex-direction: column;
+}
+
+.mod9Img {
+  background-image: url(../img/pag-autos/mobi.png);
+}
+
+/*Fin modelo 9**/
+/**************************FIN PAGINA AUTOS **************************/
+/**************************PAGINA PICKUPS **************************/
+#pickups {
+  height: 1300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#pickups-slider {
+  margin-bottom: 40px;
+}
+
+/**Modelo 1**/
+.modPick1Img {
+  background-image: url(../img/pag-pickups/hilux.png);
+}
+
+/**fin Modelo 1**/
+/**Moelos 2**/
+.modPick2Img {
+  background-image: url(../img/pag-pickups/ranger.png);
+}
+
+/**Fin modelo 2*/
+/**Modelo 3**/
+.modPick3Img {
+  background-image: url(../img/pag-pickups/s10.png);
+}
+
+/*Fin modelo 3**/
+/**Modelo 4**/
+.modPick4Img {
+  background-image: url(../img/pag-pickups/frontier.png);
+}
+
+/*Fin modelo 4**/
+/**Modelo 5**/
+.modPick5Img {
+  background-image: url(../img/pag-pickups/f150.png);
+}
+
+/*Fin modelo 5**/
+/**Modelo 6**/
+.modPick6Img {
+  background-image: url(../img/pag-pickups/ram.png);
+}
+
+/*Fin modelo 6**/
+/**Modelo 7**/
+.modPick7Img {
+  background-image: url(../img/pag-pickups/toro.png);
+}
+
+/*Fin modelo 7**/
+/**Modelo 8**/
+.modPick8Img {
+  background-image: url(../img/pag-pickups/oroch.png);
+}
+
+/*Fin modelo 8**/
+/**Modelo 9**/
+.modPick9Img {
+  background-image: url(../img/pag-pickups/amarok.png);
+}
+
+/*Fin modelo 9**/
+/************************** FIN PAGINA PICKUPS **************************/
+/**************************PAGINA OPORTUNIDADES **************************/
+#oportunidades {
+  height: 130rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#oportunidades h2 {
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.art {
+  width: 80%;
+  margin: 10px;
+  height: 500px;
+}
+
+.art1 {
+  display: flex;
+}
+.art1 .op1Img {
+  background: linear-gradient(90deg, #0063ff 0%, rgba(0, 39, 255, 0.21) 42%, rgba(213, 4, 213, 0) 50%), url(../img/pag-oportunidades/ranger-op1.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.art1 .op1Img .descOp1 {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.art1 .op1Img .descOp1 h3 {
+  font-size: 40px;
+}
+.art1 .op1Img .descOp1 p {
+  font-size: 25px;
+}
+
+.art2 {
+  display: flex;
+}
+.art2 .op2Img {
+  display: flex;
+  flex-direction: row-reverse;
+  background: linear-gradient(90deg, rgba(255, 0, 255, 0) 50%, rgba(0, 0, 0, 0.21) 58%, black 100%), url(../img/pag-oportunidades/cruze-op2.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.art2 .op2Img .descOp2 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.art2 .op2Img .descOp2 h3 {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 500 !important;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.art2 .op2Img .descOp2 p {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+.art2 .op2Img .descOp2 .colorOp2 {
+  color: #b6862d;
+}
+
+.art3 {
+  display: flex;
+}
+.art3 .op3Img {
+  display: flex;
+  background: linear-gradient(90deg, #ff2a2a 0%, rgba(0, 0, 0, 0.21) 42%, rgba(255, 0, 255, 0) 50%), url(../img/pag-oportunidades/hylux-op3.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.art3 .op3Img .descOp3 {
+  height: 100%;
+  width: 50%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Prompt", sans-serif;
+}
+.art3 .op3Img .descOp3 h3 {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500 !important;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.art3 .op3Img .descOp3 p {
+  font-family: "Prompt", sans-serif;
+  font-size: 25px;
+}
+.art3 .op3Img .descOp3 .colorOp3 {
+  color: #ffee00;
+}
+
+/************************** FIN PAGINA OPORTUNIDADES **************************/
+/**************************PAGINA SERVICE **************************/
+.mant1 {
+  background-image: linear-gradient(to right bottom, #f4ff00, #f7e600, #f7ce00, #f2b700, #eba012);
+}
+
+.mant2 {
+  background-image: linear-gradient(to right bottom, #ebb212, #eca60d, #ec9b0b, #ec8f0e, #eb8312);
+}
+
+.mant3 {
+  background-image: linear-gradient(to right bottom, #eb8312, #eb7e11, #eb7a11, #eb7511, #eb7012);
+}
+
+.mant4 {
+  background-image: linear-gradient(to right bottom, #eb7012, #eb6810, #eb5f10, #eb5511, #eb4b12);
+}
+
+.mant5 {
+  background-image: linear-gradient(to right bottom, #eb4b12, #eb4111, #eb3611, #eb2811, #eb1212);
+}
+
+#service {
+  height: 1300px;
+}
+#service h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+.service__contenedor {
+  height: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.service__contenedor .serviceImg {
+  height: 40%;
+  width: 70%;
+  background-image: url(../img/pag-service/mecanico.jpg);
+  background-size: cover;
+}
+.service__contenedor .serviceText {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service__contenedor .serviceText .p1 {
+  text-align: center;
+}
+.service__contenedor .serviceText p {
+  width: 70%;
+  font-size: 20px;
+}
+.service__contenedor .btn-service {
+  width: 300px;
+  height: 40px;
+}
+.service__contenedor .mantenimiento {
+  height: 300px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service__contenedor .mantenimiento .mant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80%;
+  width: 200px;
+  margin: 20px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+.service__contenedor .mantenimiento .mant h4 {
+  font-size: 25px;
+  text-align: center;
+}
+.service__contenedor .mantenimiento .mant h5 {
+  text-align: center;
+}
+.service__contenedor .mantenimiento .mant p {
+  font-size: 20px;
+  text-align: center;
+}
+.service__contenedor .mantenimiento .mant1 {
+  border-radius: 10px;
+  box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+}
+.service__contenedor .mantenimiento .mant2 {
+  border-radius: 10px;
+  box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+}
+.service__contenedor .mantenimiento .mant3 {
+  border-radius: 10px;
+  box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+}
+.service__contenedor .mantenimiento .mant4 {
+  border-radius: 10px;
+  box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+}
+.service__contenedor .mantenimiento .mant5 {
+  border-radius: 10px;
+  box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+}
+
+/************************** FIN PAGINA SERVICE**************************/
+.error--404 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error--404 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+}
+.error--404 div .error--img {
+  height: 60%;
+  width: 50%;
+  background-image: url(/img/pag-404/404.png);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+.error--404 div h2 {
+  font-size: 50px;
+}
+.error--404 div p {
+  font-size: 40px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  /********slider********/
+  .container-fluid {
+    height: 220px;
+    padding: 0;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .carousel a,
+.slide a {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  /********fin slider********/
+  /*grid*/
+  #nuevos--Modelos {
+    height: 330vh;
+  }
+
+  .modelos__contenedor--grid {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+
+  .item__contenedor--forma {
+    height: 500px;
+    width: 100%;
+  }
+
+  .item__contenedor--forma:hover {
+    height: 500px;
+  }
+
+  /*fin grid*/
+  /*nosotros*/
+  #nosotros--seccion {
+    width: 80%;
+    height: 750px;
+    flex-direction: column;
+  }
+
+  .nosotros__izquierda--contenedor {
+    width: 100%;
+    height: 30%;
+  }
+  .nosotros__izquierda--contenedor h3 {
+    text-align: center;
+  }
+  .nosotros__izquierda--contenedor p {
+    text-align: center;
+  }
+
+  .nosotros__derecha--contenedor {
+    width: 100%;
+    height: 70%;
+  }
+  .nosotros__derecha--contenedor h3 {
+    text-align: center;
+  }
+
+  .nosotros__Marcas--img {
+    background-size: 90%;
+  }
+
+  /*fin nosotros*/
+  /*Formulario - mapa*/
+  #formulario--seccion {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 960px;
+  }
+
+  #formulario_contacto--centrar {
+    width: 100%;
+    height: 50%;
+  }
+
+  .formulario__contacto--flex {
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulario__contacto--label label {
+    font-size: smaller;
+  }
+
+  .mapa {
+    width: 100%;
+  }
+
+  .mapaGoogle {
+    width: 80%;
+  }
+
+  #mensaje {
+    width: 100%;
+    height: 160px;
+    resize: none;
+    font-size: medium;
+  }
+
+  /*Fin formulario*/
+  /*footer */
+  footer {
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+  }
+
+  .logoFooter img {
+    width: 100%;
+  }
+
+  .copy {
+    width: 90%;
+  }
+
+  /*fin footer*/
+  /*AUTOS*/
+  #autos {
+    height: 420vh;
+  }
+
+  .variedadAutos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #pickups {
+    height: 420vh;
+  }
+
+  /******Preguntas********/
+  #preguntas {
+    height: 265vh;
+  }
+
+  .preguntas-contenedor {
+    height: 90%;
+    flex-direction: column;
+  }
+  .preguntas-contenedor .preguntas__derecha {
+    width: 80%;
+  }
+  .preguntas-contenedor .preguntas__izquierda {
+    width: 80%;
+  }
+
+  /******Fin preguntas*****/
+  #oportunidades h2 {
+    text-align: center;
+  }
+
+  .art1 .op1Img .descOp1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .art2 .op2Img .descOp2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .art3 .op3Img .descOp3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  #service {
+    height: 350vh;
+  }
+
+  .service__contenedor {
+    height: 320vh;
+  }
+  .service__contenedor .serviceImg {
+    height: 8%;
+    width: 100%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+  .service__contenedor .serviceText {
+    height: 30%;
+    text-align: justify;
+  }
+  .service__contenedor h3 {
+    text-align: center;
+  }
+  .service__contenedor .mantenimiento {
+    height: 180vh;
+    flex-direction: column;
+  }
+  .service__contenedor .mantenimiento .mant {
+    height: 15%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  /********slider********/
+  .container-fluid {
+    height: 400px;
+    padding: 0;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .carousel a,
+.slide a {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  /********fin slider********/
+  /*grid*/
+  #nuevos--Modelos {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    height: 140vh;
+  }
+
+  .modelos__contenedor--grid {
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+  }
+
+  .item__contenedor--forma {
+    height: 500px;
+    width: 100%;
+  }
+
+  .item__contenedor--forma:hover {
+    height: 500px;
+  }
+
+  .polo__Img,
+.ecos__Img,
+.captur__Img,
+.cruze__Img {
+    height: 100%;
+    background-size: 100%;
+  }
+
+  /*fin grid*/
+  /*nosotros*/
+  #nosotros--contenedor {
+    width: 80%;
+    height: 750px;
+    flex-direction: column;
+  }
+
+  .nosotros__izquierda--contenedor {
+    width: 100%;
+    height: 30%;
+  }
+  .nosotros__izquierda--contenedor h3 {
+    text-align: center;
+  }
+  .nosotros__izquierda--contenedor p {
+    text-align: center;
+  }
+
+  .nosotros__derecha--contenedor {
+    width: 100%;
+    height: 70%;
+  }
+  .nosotros__derecha--contenedor h3 {
+    text-align: center;
+  }
+
+  .nosotros__Marcas--img {
+    background-size: 90%;
+  }
+
+  /*fin nosotros*/
+  /*Formulario - mapa*/
+  #formulario--seccion {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 960px;
+  }
+
+  #formulario_contacto--centrar {
+    width: 100%;
+    height: 50%;
+  }
+
+  .formulario__contacto--flex {
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulario__contacto--label label {
+    font-size: smaller;
+  }
+
+  .mapa {
+    width: 100%;
+  }
+
+  .mapaGoogle {
+    width: 80%;
+  }
+
+  #mensaje {
+    width: 100%;
+    height: 160px;
+    resize: none;
+    font-size: medium;
+  }
+
+  /*Fin formulario*/
+  /*footer */
+  footer {
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+  }
+
+  .logoFooter img {
+    width: 100%;
+  }
+
+  .copy {
+    width: 90%;
+  }
+
+  /*fin footer*/
+  /*AUTOS*/
+  #autos {
+    height: 420vh;
+  }
+
+  .variedadAutos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #pickups {
+    height: 420vh;
+  }
+
+  /******Preguntas********/
+  #preguntas {
+    height: 150vh;
+  }
+
+  .preguntas-contenedor {
+    height: 90%;
+    flex-direction: column;
+  }
+  .preguntas-contenedor .preguntas__derecha {
+    width: 80%;
+  }
+  .preguntas-contenedor .preguntas__izquierda {
+    width: 80%;
+  }
+
+  #service {
+    height: 350vh;
+  }
+
+  .service__contenedor {
+    height: 320vh;
+  }
+  .service__contenedor .serviceImg {
+    height: 12%;
+    width: 100%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+  .service__contenedor .serviceText {
+    height: 20%;
+    text-align: justify;
+  }
+  .service__contenedor h3 {
+    text-align: center;
+  }
+  .service__contenedor .mantenimiento {
+    height: 180vh;
+    flex-direction: column;
+  }
+  .service__contenedor .mantenimiento .mant {
+    height: 15%;
+  }
+
+  /******Fin preguntas*****/
+}
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  /********slider********/
+  .container-fluid {
+    height: 420px;
+    padding: 0;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .carousel a,
+.slide a {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  /********fin slider********/
+  /*grid*/
+  #nuevos--Modelos {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    height: 140vh;
+  }
+
+  .modelos__contenedor--grid {
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+  }
+
+  .item__contenedor--forma {
+    height: 500px;
+    width: 100%;
+  }
+
+  .item__contenedor--forma:hover {
+    height: 500px;
+  }
+
+  .polo__Img,
+.ecos__Img,
+.captur__Img,
+.cruze__Img {
+    height: 100%;
+    background-size: 100%;
+  }
+
+  /*fin grid*/
+  /*nosotros*/
+  #nosotros--seccion {
+    width: 80%;
+    height: 750px;
+    flex-direction: column;
+  }
+
+  .nosotros__izquierda--contenedor {
+    width: 100%;
+    height: 30%;
+  }
+  .nosotros__izquierda--contenedor h3 {
+    text-align: center;
+  }
+  .nosotros__izquierda--contenedor p {
+    text-align: center;
+  }
+
+  .nosotros__derecha--contenedor {
+    width: 100%;
+    height: 70%;
+  }
+  .nosotros__derecha--contenedor h3 {
+    text-align: center;
+  }
+
+  .nosotros__Marcas--img {
+    background-size: 90%;
+  }
+
+  /*fin nosotros*/
+  /*Preguntas*/
+  #preguntas {
+    height: 140vh;
+  }
+  #preguntas .preguntas-contenedor .preguntas__izquierda {
+    height: 140%;
+  }
+  #preguntas .preguntas-contenedor .preguntas__derecha {
+    height: 140%;
+  }
+
+  /*Fin preguntas*/
+  /*Formulario - mapa*/
+  /*Formulario - mapa*/
+  #formulario--seccion {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 960px;
+  }
+
+  #formulario_contacto--centrar {
+    width: 100%;
+    height: 50%;
+  }
+
+  .formulario__contacto--flex {
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulario__contacto--label label {
+    font-size: smaller;
+  }
+
+  .mapa {
+    width: 100%;
+  }
+
+  .mapaGoogle {
+    width: 80%;
+  }
+
+  #mensaje {
+    width: 100%;
+    height: 160px;
+    resize: none;
+    font-size: medium;
+  }
+
+  /*Fin formulario*/
+  /*footer */
+  footer {
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+  }
+
+  .logoFooter img {
+    width: 100%;
+  }
+
+  .copy {
+    width: 90%;
+  }
+
+  /*fin footer*/
+  /*AUTOS*/
+  #autos {
+    height: 420vh;
+  }
+
+  .variedadAutos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #pickups {
+    height: 420vh;
+  }
+
+  #service {
+    height: 220vh;
+  }
+
+  .service__contenedor {
+    height: 200vh;
+  }
+  .service__contenedor .serviceImg {
+    height: 25%;
+    width: 100%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+  .service__contenedor .serviceText {
+    height: 20%;
+    text-align: justify;
+  }
+  .service__contenedor h3 {
+    text-align: center;
+  }
+  .service__contenedor .mantenimiento {
+    height: 40vh;
+    width: 90%;
+  }
+  .service__contenedor .mantenimiento .mant {
+    height: 250px;
+    width: 130px;
+  }
+}
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  /*******navbar*******/
+  .navbar-expand-lg {
+    flex-flow: column;
+  }
+
+  /*******fin navbar*******/
+  /*grid*/
+  #nuevos--Modelos {
+    height: 140vh;
+  }
+
+  .modelos__contenedor--grid {
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+  }
+
+  .item__contenedor--forma {
+    height: 500px;
+    width: 100%;
+  }
+
+  .item__contenedor--forma:hover {
+    height: 500px;
+  }
+
+  .polo__Img,
+.ecos__Img,
+.captur__Img,
+.cruze__Img {
+    height: 100%;
+    background-size: 100%;
+  }
+
+  /*fin grid*/
+  /*nosotros*/
+  #nosotros--seccion {
+    width: 80%;
+    height: 750px;
+    flex-direction: column;
+  }
+
+  .nosotros__izquierda--contenedor {
+    width: 100%;
+    height: 30%;
+  }
+  .nosotros__izquierda--contenedor h3 {
+    text-align: center;
+  }
+  .nosotros__izquierda--contenedor p {
+    text-align: center;
+  }
+
+  .nosotros__derecha--contenedor {
+    width: 100%;
+    height: 70%;
+  }
+  .nosotros__derecha--contenedor h3 {
+    text-align: center;
+  }
+
+  .nosotros__Marcas--img {
+    background-size: 50%;
+  }
+
+  /*fin nosotros*/
+  /*Formulario - mapa*/
+  #formulario--seccion {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 960px;
+  }
+
+  #formulario_contacto--centrar {
+    width: 100%;
+    height: 50%;
+  }
+
+  .formulario__contacto--label label {
+    font-size: medium;
+  }
+
+  .mapa {
+    width: 100%;
+  }
+
+  .mapaGoogle {
+    width: 80%;
+  }
+
+  /*Fin formulario*/
+  /*AUTOS*/
+  #autos {
+    height: 420vh;
+  }
+
+  .variedadAutos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #pickups {
+    height: 420vh;
+  }
+
+  /******Preguntas********/
+  /*Preguntas*/
+  #preguntas {
+    height: 140vh;
+  }
+  #preguntas .preguntas-contenedor .preguntas__izquierda {
+    height: 140%;
+  }
+  #preguntas .preguntas-contenedor .preguntas__derecha {
+    height: 140%;
+  }
+
+  /*Fin preguntas*/
+  /******Fin preguntas*****/
+  #service {
+    height: 220vh;
+  }
+
+  .service__contenedor {
+    height: 200vh;
+  }
+  .service__contenedor .serviceImg {
+    height: 25%;
+    width: 100%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+  .service__contenedor .serviceText {
+    height: 20%;
+    text-align: justify;
+  }
+  .service__contenedor h3 {
+    text-align: center;
+  }
+  .service__contenedor .mantenimiento {
+    height: 40vh;
+    width: 90%;
+  }
+  .service__contenedor .mantenimiento .mant {
+    height: 250px;
+    width: 130px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

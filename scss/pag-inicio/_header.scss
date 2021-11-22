@@ -1,0 +1,71 @@
+/*******navbar*******/
+.navbar {
+    margin-bottom: 15px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.logoPagina {
+    border: none;
+    background-image: url(../img/pag-inicio/logos/logo5.png);
+    background-size: cover;
+    background-position: center;
+    height: 86px;
+    width: 126px;
+
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            color: rgb(0, 0, 0);
+            font-size: medium;
+        }
+        .dropdown-menu {
+            position: absolute;
+            background-color: #f8f9fa;
+        }
+    }
+}
+
+.navbar-expand-lg {
+    .navbar-nav {
+        .nav-link {
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+        }
+    }
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link:hover {
+            color: rgb(255, 0, 0);
+        }
+    }
+}
+
+.navbar-brand {
+    .logoCustom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.logoTexto {
+    h1 {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/*******fin navbar*******/

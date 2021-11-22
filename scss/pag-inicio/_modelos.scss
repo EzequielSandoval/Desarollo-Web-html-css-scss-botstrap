@@ -1,0 +1,111 @@
+/******modelos*******/
+#nuevos--Modelos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 600px;
+    width: 80%;
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+}
+
+.modelos__contenedor--grid {
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    padding: 2%;
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.item__contenedor--forma {
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-box-shadow: 4px 7px 47px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 4px 7px 47px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 4px 7px 47px 0px rgba(0, 0, 0, 0.36);
+    border-radius: 10px 10px 10px 10px;
+    transition: all 0.5s;
+}
+
+.item__contenedor--forma:hover {
+    height: 450px;
+}
+
+
+.polo__contenedor--forma,
+.ecos__contenedor--forma,
+.captur__contenedor--forma,
+.cruze__contenedor--forma {
+    background-color: rgba(100, 100, 100, 0.445);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+.polo__Img {
+    background-image: url(../img/pag-inicio/section-modelos/polo2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+
+}
+
+.ecos__Img {
+    background-image: url(../img/pag-inicio/section-modelos/ecos2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.captur__Img {
+    background-image: url(../img/pag-inicio/section-modelos/captur4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.cruze__Img {
+    background-image: url(../img/pag-inicio/section-modelos/cruze2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.caracteristicas {
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.caracteristicas {
+    li {
+        i {
+            color: rgb(238, 17, 17);
+        }
+    }
+}
+
+/*******Fin modelos*******/

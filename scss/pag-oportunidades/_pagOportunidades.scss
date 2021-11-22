@@ -1,0 +1,145 @@
+/**************************PAGINA OPORTUNIDADES **************************/
+
+#oportunidades {
+    height: 130rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h2 {
+        margin-top: 10px;
+        font-size: 40px;
+    }
+
+}
+
+.art {
+    width: 80%;
+    margin: 10px;
+    height: 500px;
+}
+
+.art1 {
+    display: flex;
+
+    .op1Img {
+        background: linear-gradient(90deg, rgba(0, 99, 255, 1) 0%, rgba(0, 39, 255, 0.21) 42%, rgba(213, 4, 213, 0) 50%), url(../img/pag-oportunidades/ranger-op1.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+
+        .descOp1 {
+            height: 100%;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+
+            h3 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 25px;
+            }
+        }
+    }
+
+
+}
+
+
+.art2 {
+    display: flex;
+
+    .op2Img {
+        display: flex;
+        flex-direction: row-reverse;
+        background: linear-gradient(90deg, rgba(255, 0, 255, 0) 50%, rgba(0, 0, 0, 0.21) 58%, rgba(0, 0, 0, 1) 100%), url(../img/pag-oportunidades/cruze-op2.png);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+
+        .descOp2 {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+
+            h3 {
+                font-family: 'Roboto', sans-serif;
+                font-style: italic;
+                font-weight: 500 !important;
+                font-size: 40px;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-family: 'Roboto', sans-serif;
+                font-size: 25px;
+            }
+
+            .colorOp2 {
+                color: #b6862d;
+            }
+
+        }
+    }
+
+}
+
+.art3 {
+    display: flex;
+
+    .op3Img {
+        display: flex;
+
+        background: linear-gradient(90deg, rgba(255, 42, 42, 1) 0%, rgba(0, 0, 0, 0.21) 42%, rgba(255, 0, 255, 0) 50%), url(../img/pag-oportunidades/hylux-op3.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+
+        .descOp3 {
+            height: 100%;
+            width: 50%;
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Prompt', sans-serif;
+
+            h3 {
+                // font-style: italic;
+                font-family: 'Prompt', sans-serif;
+                font-weight: 500 !important;
+                font-size: 50px;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-family: 'Prompt', sans-serif;
+                font-size: 25px;
+            }
+
+            .colorOp3 {
+                color: #ffee00;
+            }
+        }
+    }
+
+}
+
+
+/************************** FIN PAGINA OPORTUNIDADES **************************/
+
+
+

@@ -1,0 +1,136 @@
+/**************************PAGINA SERVICE **************************/
+
+$colors: (
+    mant1: linear-gradient(to right bottom, #f4ff00, #f7e600, #f7ce00, #f2b700, #eba012),
+    mant2: linear-gradient(to right bottom, #ebb212, #eca60d, #ec9b0b, #ec8f0e, #eb8312),
+    mant3: linear-gradient(to right bottom, #eb8312, #eb7e11, #eb7a11, #eb7511, #eb7012),
+    mant4: linear-gradient(to right bottom, #eb7012, #eb6810, #eb5f10, #eb5511, #eb4b12),
+    mant5: linear-gradient(to right bottom, #eb4b12, #eb4111, #eb3611, #eb2811, #eb1212)
+);
+@each $name-color, $mantColor in $colors {
+    .#{$name-color}{
+        background-image: $mantColor;
+    }
+}
+
+#service {
+    height: 1300px;
+
+    h2 {
+        text-align: center;
+        margin: 20px;
+    }
+
+}
+
+.service__contenedor {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .serviceImg {
+        height: 40%;
+        width: 70%;
+        background-image: url(../img/pag-service/mecanico.jpg);
+        background-size: cover;
+    }
+
+    .serviceText {
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .p1 {
+            text-align: center;
+        }
+
+        p {
+            width: 70%;
+            font-size: 20px;
+        }
+    }
+
+    .btn-service {
+        width: 300px;
+        height: 40px;
+    }
+
+    .mantenimiento {
+        height: 300px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .mant {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 80%;
+            width: 200px;
+            margin: 20px;
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+
+
+            h4 {
+                font-size: 25px;
+                text-align: center;
+            }
+
+            h5 {
+                text-align: center;
+            }
+
+            p {
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+
+        .mant1 {
+            border-radius: 10px;
+            box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .mant2 {
+            border-radius: 10px;
+            box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .mant3 {
+            border-radius: 10px;
+            box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .mant4 {
+            border-radius: 10px;
+            box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .mant5 {
+            border-radius: 10px;
+            box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
+        }
+
+
+    }
+
+
+}
+
+/************************** FIN PAGINA SERVICE**************************/

@@ -1,0 +1,83 @@
+/*footer*/
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.logoFooter {
+    width: 270px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyRight {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redesFooter {
+    width: 270px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        height: 32px;
+        width: 160px;
+        display: flex;
+        justify-content: space-between;
+        text-decoration-style: none;
+        list-style: none;
+
+    }
+
+    h3 {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    i {
+        font-size: 25px;
+    }
+
+    ul {
+        li {
+            a {
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+}
+
+
+.fa-youtube:hover {
+    color: red;
+}
+
+.fa-instagram:hover {
+    color: rgb(175, 6, 175);
+}
+
+.fa-facebook-square:hover {
+    color: rgb(26, 101, 214);
+}
+
+.fa-twitter-square:hover {
+    color: rgb(0, 225, 255);
+}
+
+
+/*fin footer*/
