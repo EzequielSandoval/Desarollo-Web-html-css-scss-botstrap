@@ -997,6 +997,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 .error--404 div {
   display: flex;
@@ -1006,17 +1007,40 @@ footer {
 }
 .error--404 div .error--img {
   height: 60%;
-  width: 50%;
-  background-image: url(/img/pag-404/404.png);
+  width: 40%;
+  background-image: url(../img/pag-404/404.png);
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
+  animation: error404 3s ease 0s infinite normal none;
 }
 .error--404 div h2 {
   font-size: 50px;
 }
 .error--404 div p {
+  text-align: center;
   font-size: 40px;
+}
+@keyframes error404 {
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
