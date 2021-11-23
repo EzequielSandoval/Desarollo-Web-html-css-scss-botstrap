@@ -906,12 +906,15 @@ footer {
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
+  /*Slider*/
 }
 .service__contenedor .serviceImg {
   height: 40%;
   width: 70%;
   background-image: url(../img/pag-service/mecanico.jpg);
   background-size: cover;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 .service__contenedor .serviceText {
   height: 30%;
@@ -920,9 +923,11 @@ footer {
   align-items: center;
 }
 .service__contenedor .serviceText .p1 {
+  margin: 2rem;
   text-align: center;
 }
 .service__contenedor .serviceText p {
+  text-align: justify;
   width: 70%;
   font-size: 20px;
 }
@@ -930,14 +935,42 @@ footer {
   width: 300px;
   height: 40px;
 }
-.service__contenedor .mantenimiento {
-  height: 300px;
-  width: 80%;
+.service__contenedor #cardSlider {
+  width: 50%;
+  height: 40%;
+}
+.service__contenedor #cardSlider #serviceSlider {
+  width: 100%;
+  height: 100%;
+}
+.service__contenedor #cardSlider #serviceSlider .carousel-indicators li {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+.service__contenedor #cardSlider .serviceClassSlider,
+.service__contenedor #cardSlider .carousel,
+.service__contenedor #cardSlider .slide a {
+  background-color: transparent;
+}
+.service__contenedor #cardSlider .carousel-control-prev,
+.service__contenedor #cardSlider .carousel-control-next {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+.service__contenedor #cardSlider .carousel-control-prev svg,
+.service__contenedor #cardSlider .carousel-control-next svg {
+  color: black;
+}
+.service__contenedor #cardSlider .mantCard {
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.service__contenedor .mantenimiento .mant {
+.service__contenedor #cardSlider .mantCard .mant {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -948,48 +981,49 @@ footer {
   border-top: 3px solid black;
   border-bottom: 3px solid black;
 }
-.service__contenedor .mantenimiento .mant h4 {
+.service__contenedor #cardSlider .mantCard .mant h4 {
   font-size: 25px;
   text-align: center;
 }
-.service__contenedor .mantenimiento .mant h5 {
+.service__contenedor #cardSlider .mantCard .mant h5 {
   text-align: center;
 }
-.service__contenedor .mantenimiento .mant p {
+.service__contenedor #cardSlider .mantCard .mant p {
   font-size: 20px;
   text-align: center;
 }
-.service__contenedor .mantenimiento .mant1 {
+.service__contenedor #cardSlider .mantCard .mant1 {
   border-radius: 10px;
   box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
 }
-.service__contenedor .mantenimiento .mant2 {
+.service__contenedor #cardSlider .mantCard .mant2 {
   border-radius: 10px;
   box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
 }
-.service__contenedor .mantenimiento .mant3 {
+.service__contenedor #cardSlider .mantCard .mant3 {
   border-radius: 10px;
   box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
 }
-.service__contenedor .mantenimiento .mant4 {
+.service__contenedor #cardSlider .mantCard .mant4 {
   border-radius: 10px;
   box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
 }
-.service__contenedor .mantenimiento .mant5 {
+.service__contenedor #cardSlider .mantCard .mant5 {
   border-radius: 10px;
   box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
 }
 
+/*fin slider*/
 /************************** FIN PAGINA SERVICE**************************/
 .error--404 {
   height: 100vh;
@@ -1220,21 +1254,25 @@ footer {
   }
 
   #service {
-    height: 350vh;
+    height: 250vh;
   }
 
   .service__contenedor {
-    height: 320vh;
+    height: 220vh;
   }
   .service__contenedor .serviceImg {
-    height: 8%;
+    height: 17%;
     width: 100%;
     background-size: 150%;
     background-repeat: no-repeat;
   }
   .service__contenedor .serviceText {
-    height: 30%;
+    height: 20%;
     text-align: justify;
+  }
+  .service__contenedor .serviceText p {
+    width: 90%;
+    font-size: 19px;
   }
   .service__contenedor h3 {
     text-align: center;
@@ -1245,6 +1283,10 @@ footer {
   }
   .service__contenedor .mantenimiento .mant {
     height: 15%;
+  }
+  .service__contenedor #cardSlider {
+    width: 100%;
+    height: 25%;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 768px) {
@@ -1415,14 +1457,14 @@ footer {
   }
 
   #service {
-    height: 350vh;
+    height: 220vh;
   }
 
   .service__contenedor {
-    height: 320vh;
+    height: 200vh;
   }
   .service__contenedor .serviceImg {
-    height: 12%;
+    height: 25%;
     width: 100%;
     background-size: 150%;
     background-repeat: no-repeat;
@@ -1431,15 +1473,23 @@ footer {
     height: 20%;
     text-align: justify;
   }
+  .service__contenedor .serviceText p {
+    width: 90%;
+  }
   .service__contenedor h3 {
     text-align: center;
   }
   .service__contenedor .mantenimiento {
-    height: 180vh;
-    flex-direction: column;
+    height: 40vh;
+    width: 90%;
   }
   .service__contenedor .mantenimiento .mant {
-    height: 15%;
+    height: 250px;
+    width: 130px;
+  }
+  .service__contenedor #cardSlider {
+    width: 90%;
+    height: 25%;
   }
 
   /******Fin preguntas*****/
@@ -1637,6 +1687,10 @@ footer {
     height: 250px;
     width: 130px;
   }
+  .service__contenedor #cardSlider {
+    width: 70%;
+    height: 25%;
+  }
 }
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
   /*******navbar*******/
@@ -1786,6 +1840,10 @@ footer {
   .service__contenedor .mantenimiento .mant {
     height: 250px;
     width: 130px;
+  }
+  .service__contenedor #cardSlider {
+    width: 55%;
+    height: 25%;
   }
 }
 

@@ -91,38 +91,81 @@
             a reducir los costos de reparación y a obtener mayores beneficios en cuanto a economía y seguridad.</p>
         </div>
         <h3>Selecciona la opcion de mantenimiento</h3>
-        <div class="mantenimiento">
-        <article data-aos="zoom-out-up" class="mant mant1">
-            <h4>75 mil km o 4 años</h4>
-            <p>Precio clientes</p>
-            <h5>$13.380</h5>
-            <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
-          </article>
-          <article data-aos="zoom-out-up" class="mant mant2">
-            <h4>60 mil km o 4 años</h4>
-            <p>Precio clientes</p>
-            <h5>$15.460</h5>
-            <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
-          </article>
-          <article data-aos="zoom-out-up" class="mant mant3">
-            <h4>45 mil km o 3 años</h4>
-            <p>Precio clientes</p>
-            <h5>$16.960</h5>
-            <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
-          </article>
-          <article data-aos="zoom-out-up" class="mant mant4">
-            <h4>30 mil km o 2 años</h4>
-            <p>Precio clientes</p>
-            <h5>$19.330</h5>
-            <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
-          </article>
-          <article data-aos="zoom-out-up" class="mant mant5">
-            <h4>15 mil km o 1 año</h4>
-            <p>Precio clientes</p>
-            <h5>$15.680</h5>
-            <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
-          </article>
-      </div>
+
+        <div id="cardSlider">
+          <div id="serviceSlider" class="serviceClassSlider carousel slide" data-interval="false">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <!-- Left and right controls -->
+              <li data-target="#serviceSlider" data-slide-to="0" class="active"></li>
+              <li data-target="#serviceSlider" data-slide-to="1"></li>
+              <li data-target="#serviceSlider" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="mantCard">
+                  <article class="mant mant1">
+                    <h4>75 mil km o 4 años</h4>
+                    <p>Precio clientes</p>
+                    <h5>$13.380</h5>
+                    <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
+                  </article>
+                  <article class="mant mant2">
+                    <h4>60 mil km o 4 años</h4>
+                    <p>Precio clientes</p>
+                    <h5>$15.460</h5>
+                    <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
+                  </article>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="mantCard">
+                  <article class="mant mant3">
+                    <h4>45 mil km o 3 años</h4>
+                    <p>Precio clientes</p>
+                    <h5>$16.960</h5>
+                    <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
+                  </article>
+                  <article class="mant mant4">
+                    <h4>30 mil km o 2 años</h4>
+                    <p>Precio clientes</p>
+                    <h5>$19.330</h5>
+                    <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
+                  </article>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="mantCard">
+                  <article class="mant mant5">
+                    <h4>15 mil km o 1 año</h4>
+                    <p>Precio clientes</p>
+                    <h5>$15.680</h5>
+                    <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <!-- Left and right controls -->
+            
+            <a class="carousel-control-prev" href="#serviceSlider" data-slide="prev">
+              <span> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                  class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                </svg> </span>
+            </a>
+            <a class="carousel-control-next" href="#serviceSlider" data-slide="next">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                  class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                </svg></span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
