@@ -138,8 +138,123 @@
 
 }
 
+.modal {
+    .modal-content {
+        background-color: hsla(0, 0%, 0%, 0.800);
+
+        .modal-header {
+            .modal-title {
+                color: white;
+            }
+        }
+    }
+
+    .modal-body {
+        color: white;
+
+        .modalHeader {
+            margin-bottom: 30px;
+        }
+
+        .contenedorCard {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        h5 {
+            text-align: center;
+            text-transform: uppercase;
+            padding: 20px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            margin: 10px;
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .card-text {
+                    height: 70%;
+                    text-align: center;
+                }
+
+            }
+
+            .cardHeader {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 80%;
+
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid grey;
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 50%;
+                    transition: all 0.7s;
+                    margin-bottom: 20px;
+
+                    svg {
+                        height: 40px;
+                        width: 40px;
+                        transition: all 0.7s;
+
+                    }
+                }
+
+            }
+
+        }
+
+        .card:hover {
+            background-color: rgb(38, 107, 255);
+            color: white;
+
+            transition: all 0.7s;
+
+            .icon {
+                border: 2px solid rgb(255, 255, 255);
+
+                svg {
+                    fill: rgb(255, 255, 255);
+                }
+            }
+
+            .btn-outline-dark {
+                border-color: white;
+                color: white;
+            }
+
+            .btn-outline-dark:hover {
+                border-color: #343a40;
+
+            }
+        }
+
+        .cardCruze:hover {
+            background-color: #b6862d;
+           
+        }
+
+        .cardHylux:hover{
+            background-color: rgba(255, 42, 42, 1);
+        }
+    }
+}
+
+
+
 
 /************************** FIN PAGINA OPORTUNIDADES **************************/
-
-
-
