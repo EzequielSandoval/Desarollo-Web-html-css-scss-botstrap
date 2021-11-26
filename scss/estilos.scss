@@ -42,12 +42,16 @@
 
     /*grid*/
     #nuevos--Modelos {
-        height: 330vh;
+        height: 80%;
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
     }
 
     .modelos__contenedor--grid {
         grid-template-columns: 1fr;
         height: 100%;
+        grid-row-gap: 40px;
 
     }
 
@@ -145,6 +149,12 @@
         flex-direction: column;
     }
 
+    .copyRight {
+        h5 {
+            text-align: center;
+        }
+    }
+
     .logoFooter {
         img {
             width: 100%;
@@ -159,7 +169,8 @@
 
     /*AUTOS*/
     #autos {
-        height: 420vh;
+        height: 100%;
+        margin-bottom: 50px;
     }
 
     .variedadAutos {
@@ -170,8 +181,13 @@
 
     }
 
+    .modAuto {
+        width: 290px;
+    }
+
     #pickups {
-        height: 420vh;
+        height: 100%;
+        margin-bottom: 50px;
     }
 
     /******Preguntas********/
@@ -314,10 +330,10 @@
 
     /*grid*/
     #nuevos--Modelos {
-        width: 100%;
+        width: 90%;
         margin: auto;
         margin-top: 50px;
-        height: 140vh;
+        height: 80%;
     }
 
     .modelos__contenedor--grid {
@@ -346,7 +362,7 @@
 
     /*nosotros*/
 
-    #nosotros--contenedor {
+    #nosotros--seccion {
         width: 80%;
         height: 750px;
         flex-direction: column;
@@ -442,7 +458,8 @@
 
     /*AUTOS*/
     #autos {
-        height: 420vh;
+        height: 100%;
+        margin-bottom: 50px;
     }
 
     .variedadAutos {
@@ -454,12 +471,13 @@
     }
 
     #pickups {
-        height: 420vh;
+        height: 100%;
+        margin-bottom: 50px;
     }
 
     /******Preguntas********/
     #preguntas {
-        height: 150vh;
+        height: 160vh;
     }
 
     .preguntas-contenedor {
@@ -549,10 +567,10 @@
 
     /*grid*/
     #nuevos--Modelos {
-        width: 100%;
+        width: 80%;
         margin: auto;
         margin-top: 50px;
-        height: 140vh;
+        height: 80%;
     }
 
     .modelos__contenedor--grid {
@@ -617,7 +635,7 @@
     /*fin nosotros*/
     /*Preguntas*/
     #preguntas {
-        height: 140vh;
+        height: 160vh;
 
         .preguntas-contenedor {
             .preguntas__izquierda {
@@ -692,7 +710,8 @@
 
     /*AUTOS*/
     #autos {
-        height: 420vh;
+        height: 100%;
+        margin-bottom: 50px;
     }
 
     .variedadAutos {
@@ -704,7 +723,8 @@
     }
 
     #pickups {
-        height: 420vh;
+        height: 100%;
+        margin-bottom: 50px;
     }
 
     #service {
@@ -762,7 +782,7 @@
 
     /*grid*/
     #nuevos--Modelos {
-        height: 140vh;
+        height: 80%;
     }
 
     .modelos__contenedor--grid {
@@ -860,7 +880,8 @@
 
     /*AUTOS*/
     #autos {
-        height: 420vh;
+        height: 100%;
+        margin-bottom: 50px;
     }
 
     .variedadAutos {
@@ -872,21 +893,22 @@
     }
 
     #pickups {
-        height: 420vh;
+        height: 100%;
+        margin-bottom: 50px;
     }
 
     /******Preguntas********/
     /*Preguntas*/
     #preguntas {
-        height: 140vh;
+        height: 160vh;
 
         .preguntas-contenedor {
             .preguntas__izquierda {
-                height: 140%;
+                height: 100%;
             }
 
             .preguntas__derecha {
-                height: 140%;
+                height: 100%;
             }
         }
     }
