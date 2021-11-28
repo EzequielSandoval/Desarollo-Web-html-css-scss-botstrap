@@ -1,5 +1,4 @@
 /**************************PAGINA OPORTUNIDADES **************************/
-
 #oportunidades {
     height: 130rem;
     display: flex;
@@ -175,6 +174,7 @@
             align-items: center;
             color: black;
             margin: 10px;
+            
 
             .card-body {
                 display: flex;
@@ -214,9 +214,9 @@
                     }
                 }
 
-            }
-
-        }
+            }               
+                            
+        }                   
 
         .card:hover {
             background-color: rgb(38, 107, 255);
