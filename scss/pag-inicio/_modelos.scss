@@ -53,7 +53,7 @@
 .ecos__contenedor--forma,
 .captur__contenedor--forma,
 .cruze__contenedor--forma {
-    background-color: rgba(100, 100, 100, 0.445);
+    background-color: $primaryColor;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;

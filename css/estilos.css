@@ -1,3 +1,7 @@
+/*************Colores*************/
+/*************Fin colores*************/
+/*************Mixins*************/
+/*************Fin mixins*************/
 /*pag inicio*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap");
@@ -157,7 +161,7 @@ html {
 .ecos__contenedor--forma,
 .captur__contenedor--forma,
 .cruze__contenedor--forma {
-  background-color: rgba(100, 100, 100, 0.445);
+  background-color: #bababa;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -209,30 +213,30 @@ html {
 /*******Fin modelos*******/
 /*******nosotros*******/
 #nosotros--seccion {
+  display: flex;
+  flex-direction: row;
   width: 80%;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-right: 10%;
   margin-left: 10%;
   height: 400px;
-  display: flex;
-  flex-direction: row;
 }
 
 .nosotros__izquierda--contenedor {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   height: 100%;
   padding: 40px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
 .nosotros__derecha--contenedor {
-  width: 50%;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  width: 50%;
+  height: 100%;
   align-items: center;
 }
 .nosotros__derecha--contenedor h3 {
@@ -256,12 +260,12 @@ html {
 /*******fin nosotros******/
 /*******Preguntas********/
 #preguntas {
+  display: flex;
+  flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pag-inicio/section-faq/faq-img.png);
   background-position: center;
   background-size: cover;
   height: 700px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
 }
 #preguntas h2 {
@@ -271,7 +275,7 @@ html {
 }
 
 .preguntas-contenedor {
-  height: 600px;
+  height: 520px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -279,19 +283,11 @@ html {
 }
 .preguntas-contenedor .preguntas__izquierda {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
   height: 100%;
   width: 45%;
 }
 .preguntas-contenedor .preguntas__derecha {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
   height: 100%;
   width: 45%;
 }
@@ -301,7 +297,7 @@ html {
   justify-content: center;
   align-items: center;
   height: 50%;
-  width: 90%;
+  width: 100%;
 }
 .preguntas-contenedor .preg div {
   width: 80%;
@@ -310,7 +306,7 @@ html {
   font-size: 1.5rem;
 }
 .preguntas-contenedor .preg .btn {
-  background-color: #aaaaaa;
+  background-color: #6c757d;
   width: 100%;
 }
 .preguntas-contenedor .preg .card,
@@ -322,23 +318,23 @@ html {
 /*******Fin preguntas******/
 /******Formulario******/
 #formulario--seccion {
+  display: flex;
+  flex-direction: row;
   width: 80%;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-right: 10%;
   margin-left: 10%;
   height: 400px;
-  display: flex;
-  flex-direction: row;
   margin-bottom: 20px;
 }
 
 #formulario_contacto--centrar {
-  width: 60%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 60%;
+  height: 100%;
   padding: 10px;
 }
 #formulario_contacto--centrar legend {
@@ -349,25 +345,26 @@ html {
 
 .formulario__contacto--flex {
   display: flex;
+  flex-direction: row;
   height: 30%;
 }
 
 .formulario--izquierda {
-  width: 50%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  width: 50%;
+  height: 100%;
 }
 
 .formulario--derecha {
-  width: 50%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  width: 50%;
+  height: 100%;
 }
 
 .formulario__contacto--label {
@@ -382,15 +379,15 @@ html {
 #tipo {
   width: 250px;
   height: 30px;
-  border: 2px solid rgba(100, 100, 100, 0.445);
+  border: 2px solid #bababa;
   border-radius: 3px;
-  background-color: rgba(100, 100, 100, 0.445);
+  background-color: #bababa;
 }
 
 #mensaje {
-  border: 2px solid rgba(100, 100, 100, 0.445);
+  border: 2px solid #bababa;
   border-radius: 3px;
-  background-color: rgba(100, 100, 100, 0.445);
+  background-color: #bababa;
   width: 550px;
   height: 160px;
   resize: none;
@@ -406,21 +403,22 @@ html {
   height: 30px;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 3px;
-  border: 2px solid rgba(100, 100, 100, 0.445);
+  border: 2px solid #bababa;
   transition: 0.3s;
 }
 
 #formulario_contacto--centrar button:hover {
-  background-color: #636161;
+  background-color: #6c757d;
+  border-color: #6c757d;
   color: white;
 }
 
 .mapa {
-  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  width: 40%;
 }
 .mapa h4 {
   margin-top: 8px;
@@ -431,7 +429,7 @@ html {
 .mapaGoogle {
   width: 90%;
   height: 300px;
-  border: 2px solid rgba(100, 100, 100, 0.445);
+  border: 2px solid #bababa;
   border-radius: 3px;
 }
 
@@ -465,12 +463,12 @@ footer {
 }
 
 .redesFooter {
-  width: 270px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 270px;
+  height: 100%;
 }
 .redesFooter ul {
   height: 32px;
@@ -515,12 +513,12 @@ footer {
 }
 
 #autos {
-  height: 1300px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  height: 1300px;
+  width: 100%;
 }
 
 .autosTitulos {
@@ -543,7 +541,7 @@ footer {
 
 .modAuto {
   background-color: white;
-  border: 2px solid #a7a7a7;
+  border: 2px solid #bababa;
   -webkit-box-shadow: 4px 7px 47px 0px rgba(0, 0, 0, 0.36);
   -moz-box-shadow: 4px 7px 47px 0px rgba(0, 0, 0, 0.36);
   box-shadow: 4px 7px 47px 0px rgba(0, 0, 0, 0.36);
@@ -561,7 +559,7 @@ footer {
 }
 
 .botonMod {
-  background-color: #dad8d8;
+  background-color: #bababa;
   border-style: none;
   border-radius: 10px;
   height: 40px;
@@ -570,7 +568,8 @@ footer {
 }
 
 .botonMod:hover {
-  background-color: #a7a7a7;
+  background-color: #6c757d;
+  color: white;
 }
 
 .modImg {
@@ -697,12 +696,12 @@ footer {
 /**************************FIN PAGINA AUTOS **************************/
 /**************************PAGINA PICKUPS **************************/
 #pickups {
-  height: 1300px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  height: 1300px;
+  width: 100%;
 }
 
 #pickups-slider {
@@ -766,11 +765,11 @@ footer {
 /************************** FIN PAGINA PICKUPS **************************/
 /**************************PAGINA OPORTUNIDADES **************************/
 #oportunidades {
-  height: 130rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  height: 130rem;
 }
 #oportunidades h2 {
   margin-top: 10px;
@@ -793,12 +792,13 @@ footer {
   width: 100%;
 }
 .art1 .op1Img .descOp1 {
-  height: 100%;
-  width: 45%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 45%;
   color: white;
 }
 .art1 .op1Img .descOp1 h3 {
@@ -820,12 +820,12 @@ footer {
   width: 100%;
 }
 .art2 .op2Img .descOp2 {
-  height: 100%;
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 50%;
   color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -855,13 +855,13 @@ footer {
   width: 100%;
 }
 .art3 .op3Img .descOp3 {
-  height: 100%;
-  width: 50%;
-  padding: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 50%;
+  padding: 5%;
   color: white;
   font-family: "Prompt", sans-serif;
 }
@@ -996,11 +996,11 @@ footer {
 }
 
 .service__contenedor {
-  height: 90%;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
+  height: 90%;
   /*Slider*/
 }
 .service__contenedor .serviceImg {
@@ -1010,10 +1010,10 @@ footer {
   background-size: cover;
 }
 .service__contenedor .serviceText {
-  height: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 30%;
 }
 .service__contenedor .serviceText .p1 {
   margin: 2rem;
@@ -1326,7 +1326,7 @@ footer {
 
   /******Preguntas********/
   #preguntas {
-    height: 265vh;
+    height: 400vh;
   }
 
   .preguntas-contenedor {
@@ -1561,11 +1561,11 @@ footer {
 
   /******Preguntas********/
   #preguntas {
-    height: 160vh;
+    height: 220vh;
   }
 
   .preguntas-contenedor {
-    height: 90%;
+    height: 100%;
     flex-direction: column;
   }
   .preguntas-contenedor .preguntas__derecha {
@@ -1696,17 +1696,13 @@ footer {
   /*fin nosotros*/
   /*Preguntas*/
   #preguntas {
-    height: 160vh;
+    height: 190vh;
   }
-  #preguntas .preguntas-contenedor .preguntas__izquierda {
-    height: 140%;
-  }
-  #preguntas .preguntas-contenedor .preguntas__derecha {
-    height: 140%;
+  #preguntas .preguntas-contenedor {
+    height: 65%;
   }
 
   /*Fin preguntas*/
-  /*Formulario - mapa*/
   /*Formulario - mapa*/
   #formulario--seccion {
     flex-direction: column;
@@ -1927,11 +1923,8 @@ footer {
   #preguntas {
     height: 160vh;
   }
-  #preguntas .preguntas-contenedor .preguntas__izquierda {
-    height: 100%;
-  }
-  #preguntas .preguntas-contenedor .preguntas__derecha {
-    height: 100%;
+  #preguntas .preguntas-contenedor {
+    height: 70%;
   }
 
   /*Fin preguntas*/

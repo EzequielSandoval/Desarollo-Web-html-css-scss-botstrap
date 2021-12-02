@@ -1,0 +1,24 @@
+/*************Colores*************/
+
+$primaryColor: #bababa;
+$secondaryColor: #6c757d;
+
+/*************Fin colores*************/
+
+/*************Mixins*************/
+//Flexbox row @mixin
+@mixin flexBoxRow {
+    display: flex;
+    flex-direction: row;
+}
+
+//Flexbox column @mixin
+
+@mixin flexBoxColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*************Fin mixins*************/

@@ -1,12 +1,11 @@
 /*******Preguntas********/
 #preguntas {
+    @include flexBoxColumn;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url(../img/pag-inicio/section-faq/faq-img.png);
     background-position: center;
     background-size: cover;
     height: 700px;
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
 
     h2 {
@@ -17,7 +16,7 @@
 }
 
 .preguntas-contenedor {
-    height: 600px;
+    height: 520px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -26,34 +25,23 @@
     .preguntas__izquierda {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5));
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
         height: 100%;
         width: 45%;
-
     }
 
     .preguntas__derecha {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5));
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
         height: 100%;
         width: 45%;
-
     }
 
     .preg {
-        display: flex;
-        flex-direction: column;
+       @include flexBoxColumn;
         justify-content: center;
         align-items: center;
         height: 50%;
-        width: 90%;
+        width: 100%;
 
         div {
             width: 80%;
@@ -64,7 +52,7 @@
         }
 
         .btn {
-            background-color: rgb(170 170 170);
+            background-color: $secondaryColor;
             width: 100%;
         }
 
