@@ -169,6 +169,7 @@
     }
 
     .copy {
+        text-align: center;
         width: 90%;
     }
 
@@ -254,45 +255,89 @@
         height: 250vh;
     }
 
-    .service__contenedor {
-        height: 220vh;
+    /*Service*/
+
+    .serviciosMecanicos {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
 
         .serviceImg {
-            height: 17%;
-            width: 100%;
-            background-size: 150%;
-            background-repeat: no-repeat;
-        }
+            padding-top: 20px;
 
-        .serviceText {
-            height: 20%;
-            text-align: justify;
-
-            p {
-                width: 90%;
-                font-size: 19px;
+            img {
+                width: 80%;
+                box-shadow: 0 0 0 0;
             }
         }
 
-        h3 {
-
+        .serv {
+            width: 80%;
+            padding: 10px;
             text-align: center;
+
         }
 
-        .mantenimiento {
-            height: 180vh;
-            flex-direction: column;
+        .serviceGral {
+            @include flexBoxColumn;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            margin-bottom: 0;
 
-            .mant {
-                height: 15%;
+            .serviceImg {
+                border-radius: 10px 10px 0 0;
+            }
+
+            .serv {
+                border-radius: 0 0 10px 10px;
             }
         }
+
+        .serviceReparacion {
+            @include flexBoxColumn;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            margin-bottom: 0;
+
+            .serviceImg {
+                border-radius: 10px 10px 0 0;
+            }
+
+            .serv {
+                border-radius: 0 0 10px 10px;
+            }
+        }
+
+        .serviceElect {
+            @include flexBoxColumn;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+
+            .serviceImg {
+                border-radius: 10px 10px 0 0;
+            }
+
+            .serv {
+                border-radius: 0 0 10px 10px;
+            }
+        }
+    }
+
+    .mantOpcion {
+        height: 700px;
 
         #cardSlider {
             width: 100%;
-            height: 25%;
+            height: 60%;
         }
     }
+
+
+
+
 
     /*Oportunidades modal*/
     .modal {
@@ -459,6 +504,7 @@
     }
 
     .copy {
+        text-align: center;
         width: 90%;
     }
 
@@ -506,44 +552,90 @@
         height: 220vh;
     }
 
-    .service__contenedor {
-        height: 200vh;
+    /*Service*/
+
+    .serviciosMecanicos {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
 
         .serviceImg {
-            height: 25%;
-            width: 100%;
-            background-size: 150%;
-            background-repeat: no-repeat;
-        }
+            padding-top: 20px;
 
-        .serviceText {
-            height: 20%;
-            text-align: justify;
-
-            p {
-                width: 90%;
+            img {
+                width: 80%;
+                box-shadow: 0 0 0 0;
             }
         }
 
-        h3 {
+        .serv {
+            width: 80%;
+            padding: 10px;
             text-align: center;
+
         }
 
-        .mantenimiento {
-            height: 40vh;
-            width: 90%;
+        .serviceGral {
+            @include flexBoxColumn;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            margin-bottom: 0;
 
-            .mant {
-                height: 250px;
-                width: 130px;
+            .serviceImg {
+                border-radius: 10px 10px 0 0;
+            }
+
+            .serv {
+                border-radius: 0 0 10px 10px;
             }
         }
 
-        #cardSlider {
-            width: 90%;
-            height: 25%;
+        .serviceReparacion {
+            @include flexBoxColumn;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            margin-bottom: 0;
+
+            .serviceImg {
+                border-radius: 10px 10px 0 0;
+            }
+
+            .serv {
+                border-radius: 0 0 10px 10px;
+            }
+        }
+
+        .serviceElect {
+            @include flexBoxColumn;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+
+            .serviceImg {
+                border-radius: 10px 10px 0 0;
+            }
+
+            .serv {
+                border-radius: 0 0 10px 10px;
+            }
         }
     }
+
+    .mantOpcion {
+        height: 700px;
+
+        #cardSlider {
+            width: 85%;
+            height: 60%;
+        }
+    }
+
+    /*Fin Service*/
+
+
+
 
 
     /******Fin preguntas*****/
@@ -706,6 +798,7 @@
     }
 
     .copy {
+        text-align: center;
         width: 90%;
     }
 
@@ -730,48 +823,92 @@
         margin-bottom: 50px;
     }
 
-    #service {
-        height: 220vh;
-    }
+    /*Service*/
 
-    .service__contenedor {
-        height: 200vh;
+    .serviciosMecanicos {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
 
         .serviceImg {
-            height: 25%;
-            width: 100%;
-            background-size: 150%;
-            background-repeat: no-repeat;
-        }
+            padding-top: 20px;
 
-        .serviceText {
-            height: 20%;
-            text-align: justify;
-        }
-
-        h3 {
-            text-align: center;
-        }
-
-        .mantenimiento {
-            height: 40vh;
-            width: 90%;
-
-            .mant {
-                height: 250px;
-                width: 130px;
+            img {
+                width: 60%;
+                box-shadow: 0 0 0 0;
             }
         }
 
-        #cardSlider {
-            width: 70%;
-            height: 25%;
+        .serv {
+            width: 80%;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .serviceGral {
+            @include flexBoxColumn;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            margin-bottom: 0;
+
+            .serviceImg {
+                border-radius: 10px 10px 0 0;
+            }
+
+            .serv {
+                border-radius: 0 0 10px 10px;
+            }
+        }
+
+        .serviceReparacion {
+            @include flexBoxColumn;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            margin-bottom: 0;
+
+            .serviceImg {
+                border-radius: 10px 10px 0 0;
+            }
+
+            .serv {
+                border-radius: 0 0 10px 10px;
+            }
+        }
+
+        .serviceElect {
+            @include flexBoxColumn;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+
+            .serviceImg {
+                border-radius: 10px 10px 0 0;
+            }
+
+            .serv {
+                border-radius: 0 0 10px 10px;
+            }
         }
     }
 
+    .mantOpcion {
+        height: 700px;
 
+        #cardSlider {
+            width: 80%;
+            height: 60%;
+        }
+    }
 
+    /*Fin Service*/
 }
+
+
+
+
 
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
 
@@ -901,58 +1038,32 @@
     }
 
     /******Preguntas********/
-    /*Preguntas*/
     #preguntas {
         height: 160vh;
+
         .preguntas-contenedor {
             height: 70%;
-            
+
         }
     }
-
-    /*Fin preguntas*/
-
 
     /******Fin preguntas*****/
-    #service {
-        height: 220vh;
-    }
 
-    .service__contenedor {
-        height: 200vh;
-
+    .serviciosMecanicos {
         .serviceImg {
-            height: 25%;
-            width: 100%;
-            background-size: 150%;
-            background-repeat: no-repeat;
-        }
-
-        .serviceText {
-            height: 20%;
-            text-align: justify;
-        }
-
-        h3 {
-            text-align: center;
-        }
-
-        .mantenimiento {
-            height: 40vh;
-            width: 90%;
-            // flex-direction: column;
-
-            .mant {
-                height: 250px;
-                width: 130px;
+            img {
+                width: 60%;
             }
         }
 
-        #cardSlider {
-            width: 55%;
-            height: 25%;
+        .serv {
+            padding: 50px;
+            padding-top: 120px;
         }
     }
 
-
+    #cardSlider {
+        width: 55%;
+        height: 25%;
+    }
 }

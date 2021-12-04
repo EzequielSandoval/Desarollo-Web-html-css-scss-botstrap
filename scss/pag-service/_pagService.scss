@@ -13,55 +13,87 @@ $mantColor in $colors {
     }
 }
 
-#service {
-    height: 1300px;
+.serviciosMecanicos {
+    border: 2px solid $secondaryColor;
+    background-color: $primaryColor;
+    border-radius: 10px;
+    box-shadow: 4px 2px 27px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 2px 27px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 2px 27px -3px rgba(0,0,0,0.75);
+    width: 80%;
+    margin-top: 40px;
+    margin-right: 10%;
+    margin-left: 10%;
 
     h2 {
+        padding-top: 20px;
         text-align: center;
-        margin: 20px;
     }
-
-}
-
-.service__contenedor {
-    @include flexBoxColumn;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 90%;
 
     .serviceImg {
-        height: 40%;
-        width: 70%;
-        background-image: url(../img/pag-service/mecanico.jpg);
-        background-size: cover;
+        width: 80%;
+        background-color: rgb(226, 226, 226);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 45%;
+            border-radius: 3px;
+            box-shadow: 5px 5px 30px 1px;
+        }
     }
 
-    .serviceText {
-        @include flexBoxColumn;
-        align-items: center;
-        height: 30%;
+    .serv {
+        width: 50%;
+        padding: 70px;
+        padding-top: 120px;
+        background-color: rgb(226, 226, 226);
+    }
 
-        .p1 {
-            margin: 2rem;
+    .serviceGral {
+        @include flexBoxRow;
+        height: 400px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .serviceReparacion {
+        @include flexBoxRowReverse;
+        height: 400px;
+        margin-bottom: 40px;
+    }
+
+    .serviceElect {
+        @include flexBoxRow;
+        height: 400px;
+
+        .serviceImg {
+            border-radius: 0 0 0 10px;
+        }
+
+        .serv {
+            border-radius: 0 0 10px 0;
+        }
+    }
+}
+
+
+
+/*Slider*/
+.mantOpcion {
+    @include flexBoxRow;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+
+    #cardSlider {
+        width: 60%;
+        height: 80%;
+
+        h3 {
             text-align: center;
         }
-
-        p {
-            text-align: justify;
-            width: 70%;
-            font-size: 20px;
-        }
-    }
-
-    .btn-service {
-        width: 300px;
-        height: 40px;
-    }
-
-    /*Slider*/
-    #cardSlider {
-        width: 50%;
-        height: 40%;
 
         #serviceSlider {
             width: 100%;
@@ -86,7 +118,6 @@ $mantColor in $colors {
             display: flex;
             align-items: flex-end;
             padding-bottom: 10px;
-
             svg {
                 color: black;
             }
@@ -166,9 +197,8 @@ $mantColor in $colors {
 
 
     }
-
-
 }
+
 
 /*fin slider*/
 /************************** FIN PAGINA SERVICE**************************/

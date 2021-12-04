@@ -987,83 +987,112 @@ footer {
   background-image: linear-gradient(to right bottom, #eb4b12, #eb4111, #eb3611, #eb2811, #eb1212);
 }
 
-#service {
-  height: 1300px;
+.serviciosMecanicos {
+  border: 2px solid #6c757d;
+  background-color: #bababa;
+  border-radius: 10px;
+  box-shadow: 4px 2px 27px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 2px 27px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 2px 27px -3px rgba(0, 0, 0, 0.75);
+  width: 80%;
+  margin-top: 40px;
+  margin-right: 10%;
+  margin-left: 10%;
 }
-#service h2 {
+.serviciosMecanicos h2 {
+  padding-top: 20px;
   text-align: center;
-  margin: 20px;
+}
+.serviciosMecanicos .serviceImg {
+  width: 80%;
+  background-color: #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serviciosMecanicos .serviceImg img {
+  width: 45%;
+  border-radius: 3px;
+  box-shadow: 5px 5px 30px 1px;
+}
+.serviciosMecanicos .serv {
+  width: 50%;
+  padding: 70px;
+  padding-top: 120px;
+  background-color: #e2e2e2;
+}
+.serviciosMecanicos .serviceGral {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.serviciosMecanicos .serviceReparacion {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 400px;
+  margin-bottom: 40px;
+}
+.serviciosMecanicos .serviceElect {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+}
+.serviciosMecanicos .serviceElect .serviceImg {
+  border-radius: 0 0 0 10px;
+}
+.serviciosMecanicos .serviceElect .serv {
+  border-radius: 0 0 10px 0;
 }
 
-.service__contenedor {
+/*Slider*/
+.mantOpcion {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  height: 500px;
   align-items: center;
-  justify-content: space-evenly;
-  height: 90%;
-  /*Slider*/
+  justify-content: center;
 }
-.service__contenedor .serviceImg {
-  height: 40%;
-  width: 70%;
-  background-image: url(../img/pag-service/mecanico.jpg);
-  background-size: cover;
+.mantOpcion #cardSlider {
+  width: 60%;
+  height: 80%;
 }
-.service__contenedor .serviceText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 30%;
-}
-.service__contenedor .serviceText .p1 {
-  margin: 2rem;
+.mantOpcion #cardSlider h3 {
   text-align: center;
 }
-.service__contenedor .serviceText p {
-  text-align: justify;
-  width: 70%;
-  font-size: 20px;
-}
-.service__contenedor .btn-service {
-  width: 300px;
-  height: 40px;
-}
-.service__contenedor #cardSlider {
-  width: 50%;
-  height: 40%;
-}
-.service__contenedor #cardSlider #serviceSlider {
+.mantOpcion #cardSlider #serviceSlider {
   width: 100%;
   height: 100%;
 }
-.service__contenedor #cardSlider #serviceSlider .carousel-indicators li {
+.mantOpcion #cardSlider #serviceSlider .carousel-indicators li {
   height: 20px;
   width: 20px;
   border-radius: 50%;
   background-color: black;
 }
-.service__contenedor #cardSlider .serviceClassSlider,
-.service__contenedor #cardSlider .carousel,
-.service__contenedor #cardSlider .slide a {
+.mantOpcion #cardSlider .serviceClassSlider,
+.mantOpcion #cardSlider .carousel,
+.mantOpcion #cardSlider .slide a {
   background-color: transparent;
 }
-.service__contenedor #cardSlider .carousel-control-prev,
-.service__contenedor #cardSlider .carousel-control-next {
+.mantOpcion #cardSlider .carousel-control-prev,
+.mantOpcion #cardSlider .carousel-control-next {
   display: flex;
   align-items: flex-end;
   padding-bottom: 10px;
 }
-.service__contenedor #cardSlider .carousel-control-prev svg,
-.service__contenedor #cardSlider .carousel-control-next svg {
+.mantOpcion #cardSlider .carousel-control-prev svg,
+.mantOpcion #cardSlider .carousel-control-next svg {
   color: black;
 }
-.service__contenedor #cardSlider .mantCard {
+.mantOpcion #cardSlider .mantCard {
   height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.service__contenedor #cardSlider .mantCard .mant {
+.mantOpcion #cardSlider .mantCard .mant {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1074,42 +1103,42 @@ footer {
   border-top: 3px solid black;
   border-bottom: 3px solid black;
 }
-.service__contenedor #cardSlider .mantCard .mant h4 {
+.mantOpcion #cardSlider .mantCard .mant h4 {
   font-size: 25px;
   text-align: center;
 }
-.service__contenedor #cardSlider .mantCard .mant h5 {
+.mantOpcion #cardSlider .mantCard .mant h5 {
   text-align: center;
 }
-.service__contenedor #cardSlider .mantCard .mant p {
+.mantOpcion #cardSlider .mantCard .mant p {
   font-size: 20px;
   text-align: center;
 }
-.service__contenedor #cardSlider .mantCard .mant1 {
+.mantOpcion #cardSlider .mantCard .mant1 {
   border-radius: 10px;
   box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
 }
-.service__contenedor #cardSlider .mantCard .mant2 {
+.mantOpcion #cardSlider .mantCard .mant2 {
   border-radius: 10px;
   box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
 }
-.service__contenedor #cardSlider .mantCard .mant3 {
+.mantOpcion #cardSlider .mantCard .mant3 {
   border-radius: 10px;
   box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
 }
-.service__contenedor #cardSlider .mantCard .mant4 {
+.mantOpcion #cardSlider .mantCard .mant4 {
   border-radius: 10px;
   box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
 }
-.service__contenedor #cardSlider .mantCard .mant5 {
+.mantOpcion #cardSlider .mantCard .mant5 {
   border-radius: 10px;
   box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 9px 29px 0px rgba(0, 0, 0, 0.75);
@@ -1298,6 +1327,7 @@ footer {
   }
 
   .copy {
+    text-align: center;
     width: 90%;
   }
 
@@ -1364,36 +1394,72 @@ footer {
     height: 250vh;
   }
 
-  .service__contenedor {
-    height: 220vh;
-  }
-  .service__contenedor .serviceImg {
-    height: 17%;
-    width: 100%;
-    background-size: 150%;
-    background-repeat: no-repeat;
-  }
-  .service__contenedor .serviceText {
-    height: 20%;
-    text-align: justify;
-  }
-  .service__contenedor .serviceText p {
+  /*Service*/
+  .serviciosMecanicos {
     width: 90%;
-    font-size: 19px;
+    margin-right: 5%;
+    margin-left: 5%;
   }
-  .service__contenedor h3 {
+  .serviciosMecanicos .serviceImg {
+    padding-top: 20px;
+  }
+  .serviciosMecanicos .serviceImg img {
+    width: 80%;
+    box-shadow: 0 0 0 0;
+  }
+  .serviciosMecanicos .serv {
+    width: 80%;
+    padding: 10px;
     text-align: center;
   }
-  .service__contenedor .mantenimiento {
-    height: 180vh;
+  .serviciosMecanicos .serviceGral {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-bottom: 0;
   }
-  .service__contenedor .mantenimiento .mant {
-    height: 15%;
+  .serviciosMecanicos .serviceGral .serviceImg {
+    border-radius: 10px 10px 0 0;
   }
-  .service__contenedor #cardSlider {
+  .serviciosMecanicos .serviceGral .serv {
+    border-radius: 0 0 10px 10px;
+  }
+  .serviciosMecanicos .serviceReparacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-bottom: 0;
+  }
+  .serviciosMecanicos .serviceReparacion .serviceImg {
+    border-radius: 10px 10px 0 0;
+  }
+  .serviciosMecanicos .serviceReparacion .serv {
+    border-radius: 0 0 10px 10px;
+  }
+  .serviciosMecanicos .serviceElect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+  .serviciosMecanicos .serviceElect .serviceImg {
+    border-radius: 10px 10px 0 0;
+  }
+  .serviciosMecanicos .serviceElect .serv {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .mantOpcion {
+    height: 700px;
+  }
+  .mantOpcion #cardSlider {
     width: 100%;
-    height: 25%;
+    height: 60%;
   }
 
   /*Oportunidades modal*/
@@ -1537,6 +1603,7 @@ footer {
   }
 
   .copy {
+    text-align: center;
     width: 90%;
   }
 
@@ -1579,38 +1646,75 @@ footer {
     height: 220vh;
   }
 
-  .service__contenedor {
-    height: 200vh;
-  }
-  .service__contenedor .serviceImg {
-    height: 25%;
-    width: 100%;
-    background-size: 150%;
-    background-repeat: no-repeat;
-  }
-  .service__contenedor .serviceText {
-    height: 20%;
-    text-align: justify;
-  }
-  .service__contenedor .serviceText p {
+  /*Service*/
+  .serviciosMecanicos {
     width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
-  .service__contenedor h3 {
+  .serviciosMecanicos .serviceImg {
+    padding-top: 20px;
+  }
+  .serviciosMecanicos .serviceImg img {
+    width: 80%;
+    box-shadow: 0 0 0 0;
+  }
+  .serviciosMecanicos .serv {
+    width: 80%;
+    padding: 10px;
     text-align: center;
   }
-  .service__contenedor .mantenimiento {
-    height: 40vh;
-    width: 90%;
+  .serviciosMecanicos .serviceGral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-bottom: 0;
   }
-  .service__contenedor .mantenimiento .mant {
-    height: 250px;
-    width: 130px;
+  .serviciosMecanicos .serviceGral .serviceImg {
+    border-radius: 10px 10px 0 0;
   }
-  .service__contenedor #cardSlider {
-    width: 90%;
-    height: 25%;
+  .serviciosMecanicos .serviceGral .serv {
+    border-radius: 0 0 10px 10px;
+  }
+  .serviciosMecanicos .serviceReparacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-bottom: 0;
+  }
+  .serviciosMecanicos .serviceReparacion .serviceImg {
+    border-radius: 10px 10px 0 0;
+  }
+  .serviciosMecanicos .serviceReparacion .serv {
+    border-radius: 0 0 10px 10px;
+  }
+  .serviciosMecanicos .serviceElect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+  .serviciosMecanicos .serviceElect .serviceImg {
+    border-radius: 10px 10px 0 0;
+  }
+  .serviciosMecanicos .serviceElect .serv {
+    border-radius: 0 0 10px 10px;
   }
 
+  .mantOpcion {
+    height: 700px;
+  }
+  .mantOpcion #cardSlider {
+    width: 85%;
+    height: 60%;
+  }
+
+  /*Fin Service*/
   /******Fin preguntas*****/
 }
 @media only screen and (min-width: 769px) and (max-width: 990px) {
@@ -1753,6 +1857,7 @@ footer {
   }
 
   .copy {
+    text-align: center;
     width: 90%;
   }
 
@@ -1776,38 +1881,75 @@ footer {
     margin-bottom: 50px;
   }
 
-  #service {
-    height: 220vh;
+  /*Service*/
+  .serviciosMecanicos {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
-
-  .service__contenedor {
-    height: 200vh;
+  .serviciosMecanicos .serviceImg {
+    padding-top: 20px;
   }
-  .service__contenedor .serviceImg {
-    height: 25%;
-    width: 100%;
-    background-size: 150%;
-    background-repeat: no-repeat;
+  .serviciosMecanicos .serviceImg img {
+    width: 60%;
+    box-shadow: 0 0 0 0;
   }
-  .service__contenedor .serviceText {
-    height: 20%;
-    text-align: justify;
-  }
-  .service__contenedor h3 {
+  .serviciosMecanicos .serv {
+    width: 80%;
+    padding: 10px;
     text-align: center;
   }
-  .service__contenedor .mantenimiento {
-    height: 40vh;
-    width: 90%;
+  .serviciosMecanicos .serviceGral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-bottom: 0;
   }
-  .service__contenedor .mantenimiento .mant {
-    height: 250px;
-    width: 130px;
+  .serviciosMecanicos .serviceGral .serviceImg {
+    border-radius: 10px 10px 0 0;
   }
-  .service__contenedor #cardSlider {
-    width: 70%;
-    height: 25%;
+  .serviciosMecanicos .serviceGral .serv {
+    border-radius: 0 0 10px 10px;
   }
+  .serviciosMecanicos .serviceReparacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-bottom: 0;
+  }
+  .serviciosMecanicos .serviceReparacion .serviceImg {
+    border-radius: 10px 10px 0 0;
+  }
+  .serviciosMecanicos .serviceReparacion .serv {
+    border-radius: 0 0 10px 10px;
+  }
+  .serviciosMecanicos .serviceElect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+  .serviciosMecanicos .serviceElect .serviceImg {
+    border-radius: 10px 10px 0 0;
+  }
+  .serviciosMecanicos .serviceElect .serv {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .mantOpcion {
+    height: 700px;
+  }
+  .mantOpcion #cardSlider {
+    width: 80%;
+    height: 60%;
+  }
+
+  /*Fin Service*/
 }
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
   /*******navbar*******/
@@ -1919,7 +2061,6 @@ footer {
   }
 
   /******Preguntas********/
-  /*Preguntas*/
   #preguntas {
     height: 160vh;
   }
@@ -1927,37 +2068,16 @@ footer {
     height: 70%;
   }
 
-  /*Fin preguntas*/
   /******Fin preguntas*****/
-  #service {
-    height: 220vh;
+  .serviciosMecanicos .serviceImg img {
+    width: 60%;
+  }
+  .serviciosMecanicos .serv {
+    padding: 50px;
+    padding-top: 120px;
   }
 
-  .service__contenedor {
-    height: 200vh;
-  }
-  .service__contenedor .serviceImg {
-    height: 25%;
-    width: 100%;
-    background-size: 150%;
-    background-repeat: no-repeat;
-  }
-  .service__contenedor .serviceText {
-    height: 20%;
-    text-align: justify;
-  }
-  .service__contenedor h3 {
-    text-align: center;
-  }
-  .service__contenedor .mantenimiento {
-    height: 40vh;
-    width: 90%;
-  }
-  .service__contenedor .mantenimiento .mant {
-    height: 250px;
-    width: 130px;
-  }
-  .service__contenedor #cardSlider {
+  #cardSlider {
     width: 55%;
     height: 25%;
   }

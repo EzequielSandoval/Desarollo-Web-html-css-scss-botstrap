@@ -78,94 +78,136 @@
     <!--Fin barra de navegación-->
   </header>
   <main>
-    <section id="service">
-      <h2>Servicio mecanico especializado</h2>
-      <div class="service__contenedor">
-        <div class="serviceImg"></div>
-        <div class="serviceText">
-          <p class="p1">Te brindamos un servicio de matenimiento programado cada gratuito a los 15.000KM</p>
-          <p>Recordá que el mantenimiento periódico de tu vehículo permite conservar sus condiciones óptimas de
-            funcionamiento y seguridad, así como también prolongar su vida útil. Estas revisiones son de vital
-            importancia,
-            ya que el desgaste de las piezas son procesos graduales, por lo que si se detecta una anomalía a tiempo,
-            ayudará
-            a reducir los costos de reparación y a obtener mayores beneficios en cuanto a economía y seguridad.</p>
+
+    <section class="serviciosMecanicos">
+      <h2>Nuestros servicios</h2>
+      <div class="serviceGral">
+        <div class="serviceImg">
+          <img src="../../img/pag-service/service-aceite.jpg" alt="colocacion de aceite">
         </div>
+        <div class="serv">
+          <h3>Servicio general</h3>
+          <p>Con este servicio realizamos el cambio de aceite filtros, control de niveles, control y reparación de luces
+            y
+            bocina, estado general del vehiculo, calibracion de neumaticos y recomendaciones de mantenimiento.</p>
+        </div>
+      </div>
+
+      <div class="serviceReparacion">
+        <div class="serviceImg">
+          <img src="../../img/pag-service/service-repara.jpg" alt="">
+        </div>
+        <div class="serv">
+          <h3>Servicio de reparacion</h3>
+          <p>Reparacion de motores, tapas de cilindros, distribuciones, embragues, transmisiones, caja de velocidades,
+            turbos, tren delantero, inyección electronica, e inyección diesel.</p>
+        </div>
+      </div>
+
+      <div class="serviceElect">
+        <div class="serviceImg">
+          <img src="../../img/pag-service/service-diag.jpg" alt="">
+        </div>
+        <div class="serv">
+          <h3>Servicio de diagnostico electronico</h3>
+          <p>Localizamos las fallas por medio del uso de un scanner automotriz sofisticado de ultima generación</p>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="mantOpcion">
+      <div id="cardSlider">
         <h3>Selecciona la opcion de mantenimiento</h3>
+        <div id="serviceSlider" class="serviceClassSlider carousel slide" data-interval="false">
 
-        <div id="cardSlider">
-          <div id="serviceSlider" class="serviceClassSlider carousel slide" data-interval="false">
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <!-- Left and right controls -->
+            <li data-target="#serviceSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#serviceSlider" data-slide-to="1"></li>
+            <li data-target="#serviceSlider" data-slide-to="2"></li>
+          </ul>
 
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-              <!-- Left and right controls -->
-              <li data-target="#serviceSlider" data-slide-to="0" class="active"></li>
-              <li data-target="#serviceSlider" data-slide-to="1"></li>
-              <li data-target="#serviceSlider" data-slide-to="2"></li>
-            </ul>
-
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="mantCard">
-                  <article class="mant mant1">
-                    <h4>75 mil km o 4 años</h4>
-                    <p>Precio clientes</p>
-                    <h5>$13.380</h5>
-                    <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
-                  </article>
-                  <article class="mant mant2">
-                    <h4>60 mil km o 4 años</h4>
-                    <p>Precio clientes</p>
-                    <h5>$15.460</h5>
-                    <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
-                  </article>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="mantCard">
-                  <article class="mant mant3">
-                    <h4>45 mil km o 3 años</h4>
-                    <p>Precio clientes</p>
-                    <h5>$16.960</h5>
-                    <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
-                  </article>
-                  <article class="mant mant4">
-                    <h4>30 mil km o 2 años</h4>
-                    <p>Precio clientes</p>
-                    <h5>$19.330</h5>
-                    <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
-                  </article>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="mantCard">
-                  <article class="mant mant5">
-                    <h4>15 mil km o 1 año</h4>
-                    <p>Precio clientes</p>
-                    <h5>$15.680</h5>
-                    <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
-                  </article>
-                </div>
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="mantCard">
+                <article class="mant mant1">
+                  <h4>75 mil km o 4 años</h4>
+                  <p>Precio clientes</p>
+                  <h5>$13.380</h5>
+                  <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
+                </article>
+                <article class="mant mant2">
+                  <h4>60 mil km o 4 años</h4>
+                  <p>Precio clientes</p>
+                  <h5>$15.460</h5>
+                  <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
+                </article>
               </div>
             </div>
-            <!-- Left and right controls -->
-            
-            <a class="carousel-control-prev" href="#serviceSlider" data-slide="prev">
-              <span> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                  class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
-                </svg> </span>
-            </a>
-            <a class="carousel-control-next" href="#serviceSlider" data-slide="next">
-              <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                  class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                </svg></span>
-            </a>
+            <div class="carousel-item">
+              <div class="mantCard">
+                <article class="mant mant3">
+                  <h4>45 mil km o 3 años</h4>
+                  <p>Precio clientes</p>
+                  <h5>$16.960</h5>
+                  <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
+                </article>
+                <article class="mant mant4">
+                  <h4>30 mil km o 2 años</h4>
+                  <p>Precio clientes</p>
+                  <h5>$19.330</h5>
+                  <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
+                </article>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="mantCard">
+                <article class="mant mant5">
+                  <h4>15 mil km o 1 año</h4>
+                  <p>Precio clientes</p>
+                  <h5>$15.680</h5>
+                  <button type="button" class="btn btn-secondary btn-lg">Solicitar</button>
+                </article>
+              </div>
+            </div>
           </div>
+          <!-- Left and right controls -->
+
+          <a class="carousel-control-prev" href="#serviceSlider" data-slide="prev">
+            <span> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+              </svg> </span>
+          </a>
+          <a class="carousel-control-next" href="#serviceSlider" data-slide="next">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+              </svg></span>
+          </a>
         </div>
       </div>
     </section>

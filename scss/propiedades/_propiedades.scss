@@ -12,6 +12,11 @@ $secondaryColor: #6c757d;
     flex-direction: row;
 }
 
+@mixin flexBoxRowReverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 //Flexbox column @mixin
 
 @mixin flexBoxColumn {
